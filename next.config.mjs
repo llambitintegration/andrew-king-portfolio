@@ -9,6 +9,20 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Allow all hosts for Replit proxy environment
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+        ],
+      },
+    ];
+  },
   webpack: (config, { dev, isServer }) => {
     // Fix Windows-specific webpack issues
     if (dev && !isServer) {
