@@ -143,7 +143,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   alt="Andrew King"
                   fill
                   className="object-cover object-center"
-                  style={{ objectPosition: "50% 30%" }}
+                  style={{ objectPosition: "50% 0%" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-teal-900/20 to-transparent" />
               </div>
