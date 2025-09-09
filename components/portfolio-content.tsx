@@ -206,13 +206,13 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
               <p className="text-white/70 text-xs lg:text-sm">{resume.personalInfo.title}</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 flex-1 min-h-0 overflow-y-auto lg:overflow-y-visible">
-              <div className="flex-1 lg:flex-[2] flex flex-col min-h-0 order-1 lg:order-1">
-                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 lg:p-6 flex-1 flex flex-col min-h-0">
-                  <h3 className="text-lg lg:text-xl font-medium text-teal-300 mb-3 lg:mb-4 flex-shrink-0">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 flex-1 min-h-0">
+              <div className="w-full lg:flex-[2] flex flex-col space-y-4 lg:space-y-6 order-1">
+                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 lg:p-6">
+                  <h3 className="text-lg lg:text-xl font-medium text-teal-300 mb-3 lg:mb-4">
                     Professional Experience
                   </h3>
-                  <div className="flex-1 overflow-y-auto custom-scrollbar space-y-4 lg:space-y-6 pr-2 min-h-0 max-h-96 lg:max-h-none">
+                  <div className="space-y-4 lg:space-y-6">
                     {resume.professionalExperience.map((job, index) => (
                       <div key={index} className="border-l-2 border-teal-400/30 pl-4">
                         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 sm:gap-2 mb-2">
@@ -246,13 +246,13 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                     ))}
                   </div>
                 </div>
-
+                
                 {/* GitHub Repositories Section */}
-                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 lg:p-6 mt-4 lg:mt-6 flex-shrink-0">
+                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 lg:p-6">
                   <h3 className="text-lg lg:text-xl font-medium text-teal-300 mb-3 lg:mb-4">
                     GitHub Repositories
                   </h3>
-                  <div className="space-y-4 max-h-48 lg:max-h-80 overflow-y-auto custom-scrollbar pr-2">
+                  <div className="space-y-4 max-h-64 lg:max-h-80 overflow-y-auto custom-scrollbar pr-2">
                     {repositoriesLoading ? (
                       <div className="flex items-center justify-center py-8">
                         <div className="text-white/60 text-sm">Loading repositories...</div>
@@ -328,21 +328,11 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   </div>
                 </div>
 
-                <div className="hidden lg:block bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 lg:p-6 mt-4 lg:mt-6 flex-shrink-0">
-                  <h3 className="text-lg lg:text-xl font-medium text-teal-300 mb-4">Education</h3>
-                  <div className="border-l-2 border-teal-400/30 pl-4">
-                    <h4 className="font-medium text-white">{resume.education.degree}</h4>
-                    <p className="text-teal-300 text-sm">{resume.education.major}</p>
-                    <p className="text-white/70 text-sm">
-                      {resume.education.institution} • {resume.education.graduationYear}
-                    </p>
-                  </div>
-                </div>
               </div>
 
-              <div className="flex flex-col lg:flex-[1] space-y-4 lg:space-y-6 min-h-0 order-2 lg:order-2">
-                <div className="block lg:hidden bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 flex-shrink-0">
-                  <h3 className="text-lg font-medium text-teal-300 mb-4">Education</h3>
+              <div className="w-full lg:flex-[1] flex flex-col space-y-4 lg:space-y-6 order-2">
+                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 lg:p-6">
+                  <h3 className="text-lg lg:text-xl font-medium text-teal-300 mb-4">Education</h3>
                   <div className="border-l-2 border-teal-400/30 pl-4">
                     <h4 className="font-medium text-white">{resume.education.degree}</h4>
                     <p className="text-teal-300 text-sm">{resume.education.major}</p>
@@ -382,8 +372,8 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   </div>
                 </div>
 
-                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-shrink-0">
-                  <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-4">Key Strengths</h3>
+                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 lg:p-6 flex-shrink-0">
+                  <h3 className="text-lg lg:text-xl font-medium text-teal-300 mb-4">Key Strengths</h3>
                   <div className="space-y-2">
                     {resume.professionalSummary.keyStrengths.map((strength, index) => (
                       <div key={index} className="text-xs bg-teal-600/20 text-teal-200 px-2 py-1 rounded">
