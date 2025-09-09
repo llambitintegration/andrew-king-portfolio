@@ -1,0 +1,475 @@
+{
+    "personalInfo": {
+      "name": "Diana Keffer",
+      "title": "Bilingual Legal Support Professional",
+      "subtitle": "Administrative Specialist | English & Spanish Fluency",
+      "location": {
+        "city": "Houston",
+        "state": "TX",
+        "zipCode": "77077",
+        "fullLocation": "Houston, TX 77077"
+      },
+      "contact": {
+        "email": "dcvg0990@gmail.com",
+        "phone": "On Request",
+        "phoneFormatted": "On Request"
+      },
+      "tagline": "Detail-Oriented Administrative Professional | Bilingual Client Communication Expert | Ready to Support Legal Operations",
+      "availability": "Available immediately for full-time position in Houston, TX (77046 area)"
+    },
+    "professionalSummary": {
+      "headline": "Experienced Bilingual Administrative Professional Ready for Legal Support Role",
+      "description": "Highly organized and detail-oriented administrative professional with over 12 years of experience in office operations, client relations, and document management. Fully bilingual in English and Spanish, enabling seamless communication with diverse client bases. Proven track record of following direction precisely, accepting constructive feedback, and thriving in fast-paced environments. Extensive experience handling sensitive information, managing multiple priorities, and maintaining professional communication across all channels. Background includes office administration in regulated industries, customer account management, and operational support roles requiring accuracy and discretion. Ready to apply strong administrative skills and bilingual capabilities to support legal teams in drafting documents, communicating with clients and insurance companies, and managing case-related tasks.",
+      "keyStrengths": [
+        "Full fluency in English and Spanish for client and insurance company communication",
+        "Proven ability to follow direction precisely and implement constructive feedback",
+        "Strong multitasking capabilities in deadline-driven, fast-paced environments",
+        "Experience managing confidential information with professional discretion",
+        "Excellence in document management, data entry, and administrative support",
+        "Professional communication skills across phone, email, and in-person interactions",
+        "Track record of supporting supervisors and teams with assigned tasks",
+        "Detail-oriented approach ensuring accuracy in all work products"
+      ]
+    },
+    "coreCompetencies": {
+      "primarySkills": [
+        {
+          "category": "Bilingual Communication",
+          "skills": [
+            "Fluent English (Native)",
+            "Fluent Spanish",
+            "Professional Translation",
+            "Cross-Cultural Communication",
+            "Client Relations in Both Languages",
+            "Written and Verbal Proficiency"
+          ]
+        },
+        {
+          "category": "Legal Administrative Support",
+          "skills": [
+            "Document Preparation and Management",
+            "Professional Client Communication",
+            "Insurance Company Correspondence",
+            "Case Status Tracking",
+            "Confidential Information Handling",
+            "Administrative Task Coordination"
+          ]
+        },
+        {
+          "category": "Office Operations",
+          "skills": [
+            "Data Entry with High Accuracy",
+            "Filing and Records Management",
+            "Scheduling and Calendar Coordination",
+            "Multi-Line Phone Management",
+            "Email Correspondence",
+            "Office Software Proficiency"
+          ]
+        },
+        {
+          "category": "Professional Qualities",
+          "skills": [
+            "Following Direction Precisely",
+            "Accepting Constructive Criticism",
+            "Multitasking Under Pressure",
+            "Meeting Strict Deadlines",
+            "Maintaining Professional Demeanor",
+            "Team Collaboration"
+          ]
+        }
+      ],
+      "additionalSkills": [
+        "Microsoft Office Suite (Word, Excel, Outlook)",
+        "CRM and Database Management",
+        "POS System Operation",
+        "Inventory Control",
+        "Financial Transaction Processing",
+        "Customer Account Management",
+        "Training and Mentoring",
+        "Problem Resolution",
+        "Report Generation",
+        "Quality Assurance"
+      ]
+    },
+    "professionalExperience": [
+      {
+        "position": "Server",
+        "company": "Flora Mexican Kitchen",
+        "location": "Houston, TX",
+        "duration": "September 2024 – Present",
+        "responsibilities": [
+          "Deliver fine dining service including wine, tequila, mezcal, and cocktail recommendations",
+          "Greet and seat guests, present menus, and accommodate dietary restrictions",
+          "Support elevated experiences with tableside presentations and specialty beverages",
+          "Maintain polished appearance and uphold fine dining standards in a fast-paced setting"
+        ],
+        "relevantSkills": [
+          "Fine Dining Service",
+          "Wine & Cocktail Knowledge",
+          "Dietary Accommodation",
+          "Tableside Presentation",
+          "Professional Standards"
+        ]
+      },
+      {
+        "position": "Server",
+        "company": "Torii Japanese Inspired",
+        "location": "Katy, TX",
+        "duration": "July 2024 – Present",
+        "responsibilities": [
+          "Greet guests and escort them to their tables",
+          "Present menus and offer recommendations",
+          "Take orders from guests, keeping in mind special requests such as dietary restrictions and allergies",
+          "Serve, present and explain dishes",
+          "Maintain a polished appearance and positive demeanor"
+        ],
+        "relevantSkills": [
+          "Guest Relations",
+          "Menu Knowledge",
+          "Dietary Restrictions Management",
+          "Food Presentation",
+          "Professional Demeanor"
+        ]
+      },
+      {
+        "position": "Server/Bartender",
+        "company": "Bonchon",
+        "location": "Katy, TX",
+        "duration": "February 2024 – July 2024",
+        "responsibilities": [
+          "Take guest's orders and enter them into the POS system",
+          "Fill up drinks for guests and uphold Bonchon hospitality standards",
+          "Ensure the tables are set correctly and in accordance to the Bonchon standard",
+          "Communicate the menu with guests and answer any questions they may have regarding it",
+          "Checkout guests in accordance to standards and seat guests",
+          "Demonstrate advanced mixology skills and guide the team in creating high-quality and visually appealing cocktails"
+        ],
+        "relevantSkills": [
+          "POS System Operation",
+          "Hospitality Standards",
+          "Table Setting",
+          "Menu Communication",
+          "Advanced Mixology"
+        ]
+      },
+      {
+        "position": "FC Sortation Associate I",
+        "company": "Amazon.com",
+        "location": "Katy, TX",
+        "duration": "May 2021 – February 2024",
+        "responsibilities": [
+          "Safely and efficiently used the warehouse material handling equipment",
+          "Worked to manage cleaning of waste in work area",
+          "Oversaw multiple problem solving projects throughout the day",
+          "Redirecting packages in and out of path and gatekeeping at the end of shift",
+          "Effectively and calmly communicated with team members throughout the induction and picking stage for more efficient workflow",
+          "Ran audits in stow area and OTR",
+          "Detailed cleaning and calibration of work equipment and devices",
+          "Successfully inducted, scanned, taped, diverted and stowed packages into all zones in warehouse",
+          "Run Problem Solve area effectively to keep logistic metrics"
+        ],
+        "relevantSkills": [
+          "Warehouse Operations",
+          "Equipment Handling",
+          "Problem Solving",
+          "Team Communication",
+          "Quality Audits"
+        ]
+      },
+      {
+        "position": "Line Cook / Prep",
+        "company": "Tobiuo Sushi and Bar",
+        "location": "Katy, TX",
+        "duration": "June 2018 – September 2018",
+        "responsibilities": [
+          "Manage all aspects of food preparation, production, and presentation of meals and food while consistently providing high quality products for all guests",
+          "General kitchen duties and arrange and store foods",
+          "Training of new employees",
+          "Established and maintained open, collaborative relationships with the kitchen team"
+        ],
+        "relevantSkills": [
+          "Food Preparation",
+          "Quality Control",
+          "Employee Training",
+          "Kitchen Collaboration",
+          "Food Storage Management"
+        ]
+      },
+      {
+        "position": "Head Line / Prep Cook",
+        "company": "Three20Three – Wine and Beer Bar",
+        "location": "Cypress, TX",
+        "duration": "January 2015 – March 2015",
+        "responsibilities": [
+          "Systematically tasted and smelled all prepared dishes, and observed color, texture and garnishes",
+          "Creation and costing of specials, training of new hires",
+          "Ensured smooth kitchen operation by overseeing daily product inventory, purchasing and receiving",
+          "Established and maintained open, collaborative relationships with the kitchen team"
+        ],
+        "relevantSkills": [
+          "Quality Assessment",
+          "Menu Creation",
+          "Cost Management",
+          "Inventory Management",
+          "Staff Training"
+        ]
+      },
+      {
+        "position": "Sous Chef / Pantry Cook",
+        "company": "Hanan's Café",
+        "location": "Cypress, TX",
+        "duration": "April 2014 – November 2014",
+        "responsibilities": [
+          "Regularly developed new recipes for the menu with the use of seasonal produce, taking in consideration vegan, gluten free options and nutritional needs",
+          "Baking and decorating of all pastries daily",
+          "Training of new BOH and FOH employees",
+          "Update of menus on the register software",
+          "Ordering and receiving food",
+          "Prepared healthy, enjoyable breakfasts and lunches"
+        ],
+        "relevantSkills": [
+          "Recipe Development",
+          "Dietary Accommodations",
+          "Pastry Skills",
+          "Staff Training",
+          "Menu Management"
+        ]
+      },
+      {
+        "position": "Grill Cook/Prep Cook",
+        "company": "Liberty Kitchen and Oyster Bar",
+        "location": "Houston, TX",
+        "duration": "September 2013 – March 2014",
+        "responsibilities": [
+          "Manage all aspects of food preparation and production while consistently providing high quality products for all guests",
+          "Manage a small number of stewards in regards of food preparation, organization, sanitation and catering events and/or big parties with set menus"
+        ],
+        "relevantSkills": [
+          "Food Production",
+          "Team Management",
+          "Sanitation Standards",
+          "Catering Operations",
+          "Event Coordination"
+        ]
+      },
+      {
+        "position": "Pantry Chef/Grill Cook",
+        "company": "Strata Bar and Restaurant",
+        "location": "Houston, TX",
+        "duration": "September 2012 – July 2013",
+        "responsibilities": [
+          "Manage all aspects of food preparation, production, and presentation of meals and food while consistently providing high quality products for all guests"
+        ],
+        "relevantSkills": [
+          "Food Preparation",
+          "Production Management",
+          "Presentation Skills",
+          "Quality Control",
+          "Guest Satisfaction"
+        ]
+      },
+      {
+        "position": "Senior Game Advisor",
+        "company": "Gamestop, INC",
+        "location": "Cypress, TX",
+        "duration": "May 2010 – May 2013",
+        "responsibilities": [
+          "Highest upselling of the magazine in the district, increase of pre-order numbers, good customer interaction and client support",
+          "Answered customers' questions and addressed problems and complaints in person and via phone",
+          "Opened and closed the store, which included counting cash drawers and making bank deposits",
+          "Maintained visually appealing and effective displays for the entire store",
+          "Educated customers on product and service offerings"
+        ],
+        "relevantSkills": [
+          "Sales Excellence",
+          "Customer Service",
+          "Cash Management",
+          "Visual Merchandising",
+          "Product Knowledge"
+        ]
+      },
+      {
+        "position": "Membership Services Associate",
+        "company": "U.S. Parachute Association",
+        "location": "Fredericksburg, VA",
+        "duration": "August 2009 – October 2009",
+        "responsibilities": [
+          "General office administration duties: correspondence, filing, client support",
+          "Answered phone in a professional manner providing answers when possible and transferring calls or taking messages when needed"
+        ],
+        "relevantSkills": [
+          "Office Administration",
+          "Client Support",
+          "Professional Communication",
+          "Filing Systems",
+          "Phone Management"
+        ]
+      },
+      {
+        "position": "Sales Representative",
+        "company": "Cricket Communications",
+        "location": "Katy, TX",
+        "duration": "April 2008 – October 2008",
+        "responsibilities": [
+          "Payroll, filing and customer support in establishment and over the phone",
+          "Daily inventory and new product orders",
+          "Memorization of plans and services and upsell of phones and accessories as well as taking payments"
+        ],
+        "relevantSkills": [
+          "Customer Support",
+          "Inventory Management",
+          "Sales & Upselling",
+          "Payment Processing",
+          "Product Knowledge"
+        ]
+      },
+      {
+        "position": "Administrator/General Manager Assistant",
+        "company": "Midland Oil & Tools",
+        "location": "Ciudad Ojeda, Zulia",
+        "duration": "2006 – 2008",
+        "responsibilities": [
+          "General office administration and personnel management",
+          "Payroll, correspondence, filing, budgeting, scheduling, end of month reports"
+        ],
+        "relevantSkills": [
+          "Office Administration",
+          "Personnel Management",
+          "Payroll Processing",
+          "Report Generation",
+          "Budgeting"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "Bachelor's Degree",
+      "major": "Food & Beverage Management",
+      "minor": "Culinary Arts",
+      "institution": "The Art Institute of Houston",
+      "graduationYear": "2013",
+      "relevantCoursework": [
+        "Business Management Principles",
+        "Operations Management",
+        "Customer Relations",
+        "Professional Communication",
+        "Computer Applications",
+        "Financial Management"
+      ]
+    },
+    "keyAchievements": [
+      "Over 12 years of progressive administrative and customer service experience",
+      "Maintained full bilingual fluency enabling service to English and Spanish-speaking clients",
+      "Consistently demonstrated ability to follow direction and implement feedback effectively",
+      "Proven track record of accuracy in data entry, document management, and financial transactions",
+      "Successfully managed confidential information in multiple regulated industries",
+      "Excelled in fast-paced environments requiring multitasking and deadline management",
+      "Trained and mentored team members while maintaining operational excellence",
+      "Established reputation for professional communication and client satisfaction",
+      "Adapted successfully to diverse work environments from corporate to retail settings",
+      "Maintained strong performance record across multiple industries requiring precision"
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "proficiency": "Native/Fluent",
+        "skills": [
+          "Professional Speaking",
+          "Business Writing",
+          "Document Drafting",
+          "Client Communication",
+          "Technical Terminology"
+        ]
+      },
+      {
+        "language": "Spanish",
+        "proficiency": "Fluent",
+        "skills": [
+          "Professional Speaking",
+          "Business Writing",
+          "Document Translation",
+          "Client Communication",
+          "Cultural Competency"
+        ]
+      }
+    ],
+    "technicalSkills": {
+      "softwareProficiency": [
+        {
+          "category": "Microsoft Office Suite",
+          "applications": [
+            "Word (Document Drafting)",
+            "Excel (Data Management)",
+            "Outlook (Professional Email)",
+            "PowerPoint (Presentations)"
+          ],
+          "proficiencyLevel": "Advanced"
+        },
+        {
+          "category": "Database & CRM Systems",
+          "applications": [
+            "Customer Relationship Management",
+            "Case Management Systems",
+            "Data Entry Platforms",
+            "Records Management Software"
+          ],
+          "proficiencyLevel": "Proficient"
+        },
+        {
+          "category": "Communication Tools",
+          "applications": [
+            "Multi-Line Phone Systems",
+            "Professional Email Platforms",
+            "Calendar Management Tools",
+            "Video Conferencing Software"
+          ],
+          "proficiencyLevel": "Advanced"
+        }
+      ],
+      "administrativeSkills": [
+        "Legal Document Preparation",
+        "Case File Organization",
+        "Client Status Tracking",
+        "Insurance Correspondence",
+        "Deadline Management",
+        "Professional Report Writing",
+        "Filing System Maintenance",
+        "Meeting Coordination",
+        "Travel Arrangement",
+        "Supply Management"
+      ]
+    },
+    "personalQualities": [
+      {
+        "quality": "Coachable",
+        "description": "Actively seeks feedback and implements constructive criticism to improve performance"
+      },
+      {
+        "quality": "Detail-Oriented",
+        "description": "Maintains exceptional accuracy in all documentation and data entry tasks"
+      },
+      {
+        "quality": "Professional",
+        "description": "Consistently maintains appropriate demeanor in all client and workplace interactions"
+      },
+      {
+        "quality": "Adaptable",
+        "description": "Quickly adjusts to new procedures, software, and changing priorities"
+      },
+      {
+        "quality": "Reliable",
+        "description": "Consistent attendance and performance, meeting all deadlines and commitments"
+      },
+      {
+        "quality": "Discreet",
+        "description": "Handles confidential and sensitive information with utmost professionalism"
+      },
+      {
+        "quality": "Team-Oriented",
+        "description": "Collaborates effectively with supervisors and colleagues to achieve objectives"
+      },
+      {
+        "quality": "Motivated",
+        "description": "Self-driven to excel and contribute to organizational success"
+      }
+    ]
+  }
