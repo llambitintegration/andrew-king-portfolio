@@ -51,7 +51,7 @@ export async function getRepositoryReadme(owner: string, repo: string): Promise<
       description += trimmed + ' '
       
       // Stop when we have enough or hit a new section
-      if (description.length > 200 || trimmed.startsWith('##')) {
+      if (description.length > 450 || trimmed.startsWith('##')) {
         break
       }
     }
@@ -67,9 +67,9 @@ export async function getRepositoryReadme(owner: string, repo: string): Promise<
       }
     }
     
-    // Limit to 250 characters and clean up
-    return description.length > 250 
-      ? description.substring(0, 247).trim() + '...'
+    // Limit to 500 characters and clean up
+    return description.length > 500 
+      ? description.substring(0, 497).trim() + '...'
       : description.trim()
       
   } catch (error) {
