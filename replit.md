@@ -15,12 +15,19 @@ This is a modern Next.js portfolio website featuring interactive shader backgrou
 - **Dev Server**: Next.js development server with hot reload
 - **Package Manager**: npm (dependencies already installed)
 
-## Recent Changes (Setup)
+## Recent Changes
 - 2025-09-09: Initial project import and Replit environment setup
 - Configured Next.js for Replit proxy compatibility
 - Set up development workflow on port 5000
 - Configured deployment settings for autoscale production deployment
 - Removed problematic webpack configurations that caused ES module issues
+- Refactored for pnpm package manager to resolve build issues
+- **Mobile Responsiveness Improvements**: Refactored portfolio page layout using flex containers for better mobile rendering:
+  - Replaced CSS Grid with Flexbox layout for main portfolio structure
+  - Improved responsive breakpoints (sm/lg instead of md)
+  - Enhanced button layouts and spacing for mobile devices
+  - Optimized contact and language sections with better mobile formatting
+  - Added proper text wrapping and overflow handling
 
 ## User Preferences
 - Clean, modern portfolio design
