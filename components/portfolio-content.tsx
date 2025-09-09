@@ -132,18 +132,18 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
           role="main"
           className={`w-full h-full flex flex-col md:flex-row gap-4 md:gap-8 p-4 md:p-6 transition-all duration-500 ease-in-out ${isTransitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"}`}
         >
-          <div className="flex-shrink-0 flex items-center justify-center w-full px-2 md:px-4">
-            <div className="relative w-full max-w-md md:max-w-lg">
+          <div className="flex-shrink-0 flex items-center justify-center w-full md:w-1/3 px-2 md:px-4">
+            <div className="relative w-full max-w-xs md:max-w-none">
               <div
-                className="w-full aspect-square max-w-md md:max-w-lg relative rounded-2xl overflow-hidden"
-                style={{ filter: "url(#glass-effect)", objectFit: "cover" }}
+                className="w-full aspect-square max-w-xs md:max-w-none relative rounded-2xl overflow-hidden"
+                style={{ filter: "url(#glass-effect)" }}
               >
                 <Image
                   src="/images/andrew-headshot.jpg"
                   alt="Andrew King"
                   fill
                   className="object-cover object-center"
-                  style={{ objectPosition: "50% 20%" }}
+                  style={{ objectPosition: "50% 30%" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-teal-900/20 to-transparent" />
               </div>
