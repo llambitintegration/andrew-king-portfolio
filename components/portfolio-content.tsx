@@ -455,6 +455,21 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                 </div>
               </div>
 
+              <div className="border-t border-white/10 pt-4 md:pt-6">
+                <div className="text-center space-y-3">
+                  <h3 className="font-medium text-teal-300 mb-3 text-sm md:text-base">Client Portal</h3>
+                  <p className="text-white/70 text-xs md:text-sm mb-4">
+                    Register for an account to access project tracking, documentation, and direct communication channels.
+                  </p>
+                  <button
+                    onClick={() => alert('Registration coming soon! Contact info@llambit.io to get started.')}
+                    className="w-full py-3 bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 rounded-lg transition-colors duration-200 border border-blue-400/30 font-medium text-sm"
+                  >
+                    Register for Account
+                  </button>
+                </div>
+              </div>
+
               <div className="flex flex-wrap gap-1 md:gap-2 justify-center">
                 <span className="text-xs bg-teal-600/20 text-teal-200 px-2 md:px-3 py-1 rounded-full">
                   AI/ML Development
