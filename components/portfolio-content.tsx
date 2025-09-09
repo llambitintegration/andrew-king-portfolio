@@ -102,9 +102,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                 </h1>
 
                 <p className="text-xs font-light text-white/70 leading-relaxed max-w-xs md:max-w-md">
-                  Bilingual Administrative Professional specializing in legal support, client relations, and office
-                  operations. 12+ years of experience with expertise in document management and confidential information
-                  handling.
+                  {resume.professionalSummary.description}
                 </p>
               </div>
 
