@@ -53,9 +53,9 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   <button
                     onClick={() => handleSectionChange("home")}
                     className="hover:text-teal-200 transition-colors duration-200 text-left"
-                    data-testid="diana-name-button"
+                    data-testid="andrew-name-button"
                   >
-                    <span className="font-medium italic instrument">Diana</span> Keffer
+                    <span className="font-medium italic instrument">Andrew</span> King
                     <br />
                     <span className="font-light tracking-tight text-white">Portfolio</span>
                   </button>
@@ -101,8 +101,8 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                 style={{ filter: "url(#glass-effect)" }}
               >
                 <Image
-                  src="/images/diana-headshot.jpg"
-                  alt="Diana Keffer"
+                  src="/images/andrew-headshot.jpg"
+                  alt="Andrew King"
                   fill
                   className="object-cover object-center"
                   style={{ objectPosition: "50% 70%" }}

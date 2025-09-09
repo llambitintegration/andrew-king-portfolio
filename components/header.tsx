@@ -20,8 +20,8 @@ export default function Header({ onSectionChange, currentSection }: HeaderProps)
     e.preventDefault()
     // In a real application, this would be handled by a secure authentication service
     // For demo purposes, we'll use environment variables or fallback to demo credentials
-    const validEmail = process.env.NEXT_PUBLIC_ADMIN_EMAIL || "diana@keffer.com"
-    const validPassword = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || "DianaKeffer123!@#"
+    const validEmail = process.env.NEXT_PUBLIC_ADMIN_EMAIL || "andrew@king.com"
+    const validPassword = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || "AndrewKing123!@#"
 
     if (credentials.email === validEmail && credentials.password === validPassword) {
       router.push("/admin")
@@ -38,7 +38,7 @@ export default function Header({ onSectionChange, currentSection }: HeaderProps)
             onClick={() => onSectionChange("home")}
             className="text-white text-lg font-medium hover:text-teal-300 transition-colors duration-200"
           >
-            Diana Keffer
+            Andrew King
           </button>
         </div>
 
