@@ -23,43 +23,6 @@ const nextConfig = {
       },
     ];
   },
-  webpack: (config, { dev, isServer }) => {
-    // Fix Windows-specific webpack issues
-    if (dev && !isServer) {
-      // Configure webpack cache for Windows
-      config.cache = {
-        type: 'filesystem',
-        buildDependencies: {
-          config: [__filename],
-        },
-        // Add cache invalidation for better Windows compatibility
-        cacheDirectory: '.next/cache/webpack',
-        compression: false,
-      }
-      
-      // Fix watchpack errors for Windows system files
-      config.watchOptions = {
-        ...config.watchOptions,
-        ignored: [
-          '**/node_modules/**',
-          '**/.git/**',
-          '**/.next/**',
-          // Windows system files that cause watchpack errors
-          /C:\\hiberfil\.sys$/,
-          /C:\\pagefile\.sys$/,
-          /C:\\swapfile\.sys$/,
-          /C:\\DumpStack\.log\.tmp$/,
-          // General Windows temp and system file patterns
-          /^[A-Z]:\\(hiberfil|pagefile|swapfile)\.sys$/,
-          /^[A-Z]:\\DumpStack\.log\.tmp$/,
-        ],
-        aggregateTimeout: 300,
-        poll: false,
-      }
-    }
-    
-    return config
-  },
 }
 
 export default nextConfig
