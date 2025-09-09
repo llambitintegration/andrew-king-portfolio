@@ -414,8 +414,8 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
             </h2>
 
             <p className="text-white/70 leading-relaxed text-sm md:text-base">
-              Bridging traditional administrative excellence with modern AI technology. Available for consulting and
-              contracting work to help businesses integrate AI solutions into their administrative and legal support
+              Experienced AI/ML engineer specializing in industrial robotics and intelligent automation systems. Available for consulting and
+              contracting work to help businesses integrate cutting-edge AI/ML solutions into their manufacturing and automation
               operations.
             </p>
 
@@ -424,24 +424,21 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                 <h3 className="font-medium text-teal-300 mb-2 md:mb-3 text-sm md:text-base">Consulting Services</h3>
                 <div className="grid gap-3 md:gap-4 text-left">
                   <div className="bg-gray-800/40 rounded-lg p-3 md:p-4">
-                    <h4 className="font-medium text-white mb-2 text-sm md:text-base">Administrative AI Integration</h4>
+                    <h4 className="font-medium text-white mb-2 text-sm md:text-base">AI/ML Systems Development</h4>
                     <p className="text-white/70 text-xs md:text-sm">
-                      Streamline document management, scheduling, and data entry processes using AI tools and
-                      automation.
+                      Design and implement turn-key Machine Learning solutions using Python/FastAPI, TensorFlow, PyTorch, and modern AI frameworks for enterprise automation platforms.
                     </p>
                   </div>
                   <div className="bg-gray-800/40 rounded-lg p-3 md:p-4">
-                    <h4 className="font-medium text-white mb-2 text-sm md:text-base">Legal Support Automation</h4>
+                    <h4 className="font-medium text-white mb-2 text-sm md:text-base">Industrial Robotics & Automation</h4>
                     <p className="text-white/70 text-xs md:text-sm">
-                      Implement AI solutions for legal document processing, client communication, and case management
-                      systems.
+                      Integrate collaborative robotics, PLC programming, and vision systems using FANUC, KUKA, Universal Robots, and Allen Bradley platforms.
                     </p>
                   </div>
                   <div className="bg-gray-800/40 rounded-lg p-3 md:p-4">
-                    <h4 className="font-medium text-white mb-2 text-sm md:text-base">Bilingual AI Solutions</h4>
+                    <h4 className="font-medium text-white mb-2 text-sm md:text-base">Full Stack Development & Cloud</h4>
                     <p className="text-white/70 text-xs md:text-sm">
-                      Develop multilingual AI workflows for English-Spanish business operations and client
-                      communications.
+                      Build complete solutions from database architecture to frontend interfaces using React/TypeScript, PostgreSQL, Docker, and Azure cloud technologies.
                     </p>
                   </div>
                 </div>
@@ -451,26 +448,26 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                 <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                   <div className="text-left">
                     <h3 className="font-medium text-teal-300 mb-2 text-sm md:text-base">Email</h3>
-                    <p className="text-white/80 text-xs md:text-sm">{resume.personalInfo.contact.email}</p>
+                    <p className="text-white/80 text-xs md:text-sm">info@llambit.io</p>
                   </div>
                   <div className="text-left">
                     <h3 className="font-medium text-teal-300 mb-2 text-sm md:text-base">Phone</h3>
-                    <p className="text-white/80 text-xs md:text-sm">{resume.personalInfo.contact.phoneFormatted}</p>
+                    <p className="text-white/80 text-xs md:text-sm">On Request</p>
                   </div>
                 </div>
               </div>
 
               <div className="flex flex-wrap gap-1 md:gap-2 justify-center">
                 <span className="text-xs bg-teal-600/20 text-teal-200 px-2 md:px-3 py-1 rounded-full">
-                  AI Integration
+                  AI/ML Development
                 </span>
                 <span className="text-xs bg-teal-600/20 text-teal-200 px-2 md:px-3 py-1 rounded-full">
-                  Process Automation
+                  Industrial Robotics
                 </span>
                 <span className="text-xs bg-teal-600/20 text-teal-200 px-2 md:px-3 py-1 rounded-full">
-                  Bilingual Solutions
+                  Automation Systems
                 </span>
-                <span className="text-xs bg-teal-600/20 text-teal-200 px-2 md:px-3 py-1 rounded-full">Legal Tech</span>
+                <span className="text-xs bg-teal-600/20 text-teal-200 px-2 md:px-3 py-1 rounded-full">Full Stack</span>
               </div>
             </div>
           </div>
