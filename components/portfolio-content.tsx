@@ -257,14 +257,11 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                 <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-shrink-0">
                   <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-4">Key Strengths</h3>
                   <div className="space-y-2">
-                    <div className="text-xs bg-teal-600/20 text-teal-200 px-2 py-1 rounded">Document Management</div>
-                    <div className="text-xs bg-teal-600/20 text-teal-200 px-2 py-1 rounded">
-                      Bilingual Communication
-                    </div>
-                    <div className="text-xs bg-teal-600/20 text-teal-200 px-2 py-1 rounded">Client Relations</div>
-                    <div className="text-xs bg-teal-600/20 text-teal-200 px-2 py-1 rounded">
-                      Confidential Information
-                    </div>
+                    {resume.professionalSummary.keyStrengths.map((strength, index) => (
+                      <div key={index} className="text-xs bg-teal-600/20 text-teal-200 px-2 py-1 rounded">
+                        {strength}
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
