@@ -199,20 +199,20 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
           className={`w-full h-full p-4 md:p-6 transition-all duration-500 ease-in-out ${isTransitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"}`}
         >
           <div className="max-w-4xl mx-auto text-white h-full flex flex-col">
-            <div className="text-center mb-4 md:mb-6 flex-shrink-0">
-              <h2 className="text-xl md:text-3xl font-light mb-2">
+            <div className="text-center mb-4 lg:mb-6 flex-shrink-0">
+              <h2 className="text-xl lg:text-3xl font-light mb-2">
                 <span className="font-medium italic instrument">Professional</span> Portfolio
               </h2>
-              <p className="text-white/70 text-xs md:text-sm">{resume.personalInfo.title}</p>
+              <p className="text-white/70 text-xs lg:text-sm">{resume.personalInfo.title}</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 flex-1 min-h-0">
-              <div className="flex-1 lg:flex-[2] flex flex-col min-h-0 order-1 lg:order-none">
-                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-1 flex flex-col min-h-0">
-                  <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-3 md:mb-4 flex-shrink-0">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 flex-1 min-h-0 overflow-y-auto lg:overflow-y-visible">
+              <div className="flex-1 lg:flex-[2] flex flex-col min-h-0 order-1 lg:order-1">
+                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 lg:p-6 flex-1 flex flex-col min-h-0">
+                  <h3 className="text-lg lg:text-xl font-medium text-teal-300 mb-3 lg:mb-4 flex-shrink-0">
                     Professional Experience
                   </h3>
-                  <div className="flex-1 overflow-y-auto custom-scrollbar space-y-4 md:space-y-6 pr-2 min-h-0">
+                  <div className="flex-1 overflow-y-auto custom-scrollbar space-y-4 lg:space-y-6 pr-2 min-h-0 max-h-96 lg:max-h-none">
                     {resume.professionalExperience.map((job, index) => (
                       <div key={index} className="border-l-2 border-teal-400/30 pl-4">
                         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 sm:gap-2 mb-2">
@@ -252,7 +252,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   <h3 className="text-lg lg:text-xl font-medium text-teal-300 mb-3 lg:mb-4">
                     GitHub Repositories
                   </h3>
-                  <div className="space-y-4 max-h-64 lg:max-h-80 overflow-y-auto custom-scrollbar pr-2">
+                  <div className="space-y-4 max-h-48 lg:max-h-80 overflow-y-auto custom-scrollbar pr-2">
                     {repositoriesLoading ? (
                       <div className="flex items-center justify-center py-8">
                         <div className="text-white/60 text-sm">Loading repositories...</div>
@@ -340,7 +340,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                 </div>
               </div>
 
-              <div className="flex flex-col lg:flex-[1] space-y-4 lg:space-y-6 min-h-0 order-2 lg:order-none">
+              <div className="flex flex-col lg:flex-[1] space-y-4 lg:space-y-6 min-h-0 order-2 lg:order-2">
                 <div className="block lg:hidden bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 flex-shrink-0">
                   <h3 className="text-lg font-medium text-teal-300 mb-4">Education</h3>
                   <div className="border-l-2 border-teal-400/30 pl-4">
