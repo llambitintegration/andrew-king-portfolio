@@ -1,13 +1,16 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import JobDetailModal from "./job-detail-modal"
+import RepositoryDetailModal from "./repository-detail-modal"
 import PageLayout from "./page-layout"
 import UnifiedNavigation from "./unified-navigation"
 import { getResume } from "@/lib/getResume"
+import { getGitHubRepositories, formatRepoDate, getRepoLanguageColor } from "@/lib/github"
 import type { ProfessionalExperience } from "@/types/resume"
 import type { NavigationSection } from "@/types/navigation"
+import type { GitHubRepository } from "@/types/github"
 
 interface PortfolioContentProps {
   currentSection: NavigationSection
@@ -17,17 +20,32 @@ interface PortfolioContentProps {
 export default function PortfolioContent({ currentSection, onSectionChange }: PortfolioContentProps) {
   const resume = getResume()
   const [selectedJob, setSelectedJob] = useState<ProfessionalExperience | null>(null)
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isJobModalOpen, setIsJobModalOpen] = useState(false)
+  const [selectedRepository, setSelectedRepository] = useState<GitHubRepository | null>(null)
+  const [isRepoModalOpen, setIsRepoModalOpen] = useState(false)
+  const [repositories, setRepositories] = useState<GitHubRepository[]>([])
+  const [repositoriesLoading, setRepositoriesLoading] = useState(true)
+  const [repositoriesError, setRepositoriesError] = useState<string | null>(null)
   const [isTransitioning, setIsTransitioning] = useState(false)
 
   const openJobModal = (job: ProfessionalExperience) => {
     setSelectedJob(job)
-    setIsModalOpen(true)
+    setIsJobModalOpen(true)
   }
 
   const closeJobModal = () => {
-    setIsModalOpen(false)
+    setIsJobModalOpen(false)
     setSelectedJob(null)
+  }
+
+  const openRepoModal = (repository: GitHubRepository) => {
+    setSelectedRepository(repository)
+    setIsRepoModalOpen(true)
+  }
+
+  const closeRepoModal = () => {
+    setIsRepoModalOpen(false)
+    setSelectedRepository(null)
   }
 
   const handleSectionChange = (section: NavigationSection) => {
@@ -37,6 +55,28 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
       setIsTransitioning(false)
     }, 300)
   }
+
+  // Fetch GitHub repositories on component mount
+  useEffect(() => {
+    const fetchRepositories = async () => {
+      try {
+        setRepositoriesLoading(true)
+        const { repositories: repos, error } = await getGitHubRepositories()
+        if (error) {
+          setRepositoriesError(error)
+        } else {
+          setRepositories(repos)
+          setRepositoriesError(null)
+        }
+      } catch (err) {
+        setRepositoriesError('Failed to load repositories')
+      } finally {
+        setRepositoriesLoading(false)
+      }
+    }
+
+    fetchRepositories()
+  }, [])
 
   if (currentSection === "home") {
     return (
@@ -209,6 +249,87 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   </div>
                 </div>
 
+                {/* GitHub Repositories Section */}
+                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 mt-4 md:mt-6 flex-shrink-0">
+                  <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-3 md:mb-4">
+                    GitHub Repositories
+                  </h3>
+                  <div className="space-y-4 max-h-64 overflow-y-auto custom-scrollbar pr-2">
+                    {repositoriesLoading ? (
+                      <div className="flex items-center justify-center py-8">
+                        <div className="text-white/60 text-sm">Loading repositories...</div>
+                      </div>
+                    ) : repositoriesError ? (
+                      <div className="flex items-center justify-center py-8">
+                        <div className="text-red-400 text-sm">{repositoriesError}</div>
+                      </div>
+                    ) : repositories.length === 0 ? (
+                      <div className="flex items-center justify-center py-8">
+                        <div className="text-white/60 text-sm">No repositories found</div>
+                      </div>
+                    ) : (
+                      repositories.slice(0, 6).map((repo) => (
+                        <div key={repo.id} className="border-l-2 border-teal-400/30 pl-4">
+                          <div className="flex justify-between items-start mb-2">
+                            <div className="flex-1">
+                              <h4 className="font-medium text-white">{repo.name}</h4>
+                              <p className="text-teal-300 text-sm">
+                                {repo.language && (
+                                  <span className="inline-flex items-center gap-1">
+                                    <div 
+                                      className="w-2 h-2 rounded-full"
+                                      style={{ backgroundColor: getRepoLanguageColor(repo.language) }}
+                                    />
+                                    {repo.language}
+                                  </span>
+                                )}
+                                {repo.language && ' • '}
+                                ⭐ {repo.stargazers_count}
+                              </p>
+                              <p className="text-white/60 text-xs">
+                                Updated {formatRepoDate(repo.updated_at)}
+                              </p>
+                            </div>
+                            <div className="flex gap-2 ml-4 flex-shrink-0">
+                              <button
+                                onClick={() => openRepoModal(repo)}
+                                className="px-3 py-1 bg-teal-600/20 hover:bg-teal-600/30 text-teal-200 text-xs rounded-full border border-teal-400/30 transition-colors duration-200"
+                              >
+                                View Details
+                              </button>
+                              <button
+                                onClick={() => window.open(repo.html_url, '_blank', 'noopener,noreferrer')}
+                                className="px-3 py-1 bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 text-xs rounded-full border border-blue-400/30 transition-colors duration-200"
+                              >
+                                View Repo
+                              </button>
+                            </div>
+                          </div>
+                          {repo.description && (
+                            <p className="text-white/70 text-sm mt-2 line-clamp-2">
+                              {repo.description}
+                            </p>
+                          )}
+                          {repo.topics && repo.topics.length > 0 && (
+                            <div className="flex flex-wrap gap-1 mt-2">
+                              {repo.topics.slice(0, 3).map((topic) => (
+                                <span key={topic} className="text-xs bg-gray-600/30 text-gray-300 px-2 py-0.5 rounded">
+                                  {topic}
+                                </span>
+                              ))}
+                              {repo.topics.length > 3 && (
+                                <span className="text-xs text-gray-400">
+                                  +{repo.topics.length - 3} more
+                                </span>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      ))
+                    )}
+                  </div>
+                </div>
+
                 <div className="hidden md:block bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 mt-4 md:mt-6 flex-shrink-0">
                   <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-4">Education</h3>
                   <div className="border-l-2 border-teal-400/30 pl-4">
@@ -267,7 +388,8 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
               </div>
             </div>
 
-            {selectedJob && <JobDetailModal job={selectedJob} isOpen={isModalOpen} onClose={closeJobModal} />}
+            {selectedJob && <JobDetailModal job={selectedJob} isOpen={isJobModalOpen} onClose={closeJobModal} />}
+            {selectedRepository && <RepositoryDetailModal repository={selectedRepository} isOpen={isRepoModalOpen} onClose={closeRepoModal} />}
           </div>
         </main>
       </PageLayout>
