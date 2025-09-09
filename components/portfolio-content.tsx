@@ -198,7 +198,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
           role="main"
           className={`w-full h-full p-4 md:p-6 transition-all duration-500 ease-in-out ${isTransitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"}`}
         >
-          <div className="max-w-4xl mx-auto text-white h-full flex flex-col">
+          <div className="max-w-4xl mx-auto text-white h-full overflow-y-auto custom-scrollbar flex flex-col">
             <div className="text-center mb-4 lg:mb-6 flex-shrink-0">
               <h2 className="text-xl lg:text-3xl font-light mb-2">
                 <span className="font-medium italic instrument">Professional</span> Portfolio
@@ -206,7 +206,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
               <p className="text-white/70 text-xs lg:text-sm">{resume.personalInfo.title}</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 flex-1 min-h-0">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 flex-1">
               <div className="w-full lg:flex-[2] flex flex-col space-y-4 lg:space-y-6 order-1">
                 <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 lg:p-6">
                   <h3 className="text-lg lg:text-xl font-medium text-teal-300 mb-3 lg:mb-4">
