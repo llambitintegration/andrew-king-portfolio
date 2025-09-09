@@ -36,7 +36,7 @@ export default function RepositoryDetailModal({ repository, isOpen, onClose }: R
   return (
     <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 animate-fade-in">
       <div
-        className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto border border-white/20 animate-modal-enter"
+        className="bg-gray-900/85 backdrop-blur-lg rounded-2xl p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto border border-white/20 animate-modal-enter"
         style={{ filter: "url(#glass-effect)" }}
       >
         <div className="flex justify-between items-start mb-6">
