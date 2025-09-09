@@ -127,7 +127,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   <h3 className="text-lg md:text-xl font-medium text-teal-300">Core Expertise</h3>
                   <div className="grid gap-2 md:gap-3">
                     {resume.coreCompetencies.primarySkills.map((skill, index) => (
-                      <div key={index} className="bg-white/5 backdrop-blur-sm rounded-lg p-3 md:p-4">
+                      <div key={index} className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-3 md:p-4">
                         <h4 className="font-medium text-white mb-2 text-sm md:text-base">{skill.category}</h4>
                         <div className="flex flex-wrap gap-1 md:gap-2">
                           {skill.skills.map((item, i) => (
@@ -170,7 +170,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 flex-1 min-h-0">
               <div className="md:col-span-2 flex flex-col min-h-0 order-1 md:order-none">
-                <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-1 flex flex-col min-h-0">
+                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-1 flex flex-col min-h-0">
                   <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-3 md:mb-4 flex-shrink-0">
                     Professional Experience
                   </h3>
@@ -209,7 +209,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   </div>
                 </div>
 
-                <div className="hidden md:block bg-white/5 backdrop-blur-sm rounded-lg p-4 md:p-6 mt-4 md:mt-6 flex-shrink-0">
+                <div className="hidden md:block bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 mt-4 md:mt-6 flex-shrink-0">
                   <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-4">Education</h3>
                   <div className="border-l-2 border-teal-400/30 pl-4">
                     <h4 className="font-medium text-white">{resume.education.degree}</h4>
@@ -222,7 +222,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
               </div>
 
               <div className="flex flex-col space-y-4 md:space-y-6 min-h-0 order-2 md:order-none">
-                <div className="block md:hidden bg-white/5 backdrop-blur-sm rounded-lg p-4 flex-shrink-0">
+                <div className="block md:hidden bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 flex-shrink-0">
                   <h3 className="text-lg font-medium text-teal-300 mb-4">Education</h3>
                   <div className="border-l-2 border-teal-400/30 pl-4">
                     <h4 className="font-medium text-white">{resume.education.degree}</h4>
@@ -233,7 +233,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   </div>
                 </div>
 
-                <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-shrink-0">
+                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-shrink-0">
                   <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-4">Contact</h3>
                   <div className="space-y-2 text-sm">
                     <p className="text-white/70">{resume.personalInfo.location.fullLocation}</p>
@@ -242,7 +242,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   </div>
                 </div>
 
-                <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-shrink-0">
+                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-shrink-0">
                   <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-4">Languages</h3>
                   <div className="space-y-2">
                     {resume.languages.map((lang, index) => (
@@ -254,7 +254,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   </div>
                 </div>
 
-                <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-shrink-0">
+                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-shrink-0">
                   <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-4">Key Strengths</h3>
                   <div className="space-y-2">
                     <div className="text-xs bg-teal-600/20 text-teal-200 px-2 py-1 rounded">Document Management</div>
@@ -300,25 +300,25 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
               operations.
             </p>
 
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 md:p-8 space-y-4 md:space-y-6">
+            <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-8 space-y-4 md:space-y-6">
               <div className="space-y-3 md:space-y-4">
                 <h3 className="font-medium text-teal-300 mb-2 md:mb-3 text-sm md:text-base">Consulting Services</h3>
                 <div className="grid gap-3 md:gap-4 text-left">
-                  <div className="bg-white/5 rounded-lg p-3 md:p-4">
+                  <div className="bg-gray-800/40 rounded-lg p-3 md:p-4">
                     <h4 className="font-medium text-white mb-2 text-sm md:text-base">Administrative AI Integration</h4>
                     <p className="text-white/70 text-xs md:text-sm">
                       Streamline document management, scheduling, and data entry processes using AI tools and
                       automation.
                     </p>
                   </div>
-                  <div className="bg-white/5 rounded-lg p-3 md:p-4">
+                  <div className="bg-gray-800/40 rounded-lg p-3 md:p-4">
                     <h4 className="font-medium text-white mb-2 text-sm md:text-base">Legal Support Automation</h4>
                     <p className="text-white/70 text-xs md:text-sm">
                       Implement AI solutions for legal document processing, client communication, and case management
                       systems.
                     </p>
                   </div>
-                  <div className="bg-white/5 rounded-lg p-3 md:p-4">
+                  <div className="bg-gray-800/40 rounded-lg p-3 md:p-4">
                     <h4 className="font-medium text-white mb-2 text-sm md:text-base">Bilingual AI Solutions</h4>
                     <p className="text-white/70 text-xs md:text-sm">
                       Develop multilingual AI workflows for English-Spanish business operations and client
