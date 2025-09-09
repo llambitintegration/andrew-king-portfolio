@@ -47,22 +47,25 @@ export default function Header({ onSectionChange, currentSection }: HeaderProps)
             onClick={() => setShowLogin(!showLogin)}
             className="px-6 py-2 rounded-full bg-white text-black font-normal text-xs transition-all duration-300 hover:bg-white/90 cursor-pointer h-8 flex items-center"
           >
-            Admin
+            Login
           </button>
         </div>
       </header>
 
       {showLogin && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg p-6 w-80">
-            <h3 className="text-lg font-medium mb-4 text-black">Admin Login</h3>
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 animate-fade-in">
+          <div
+            className="bg-gray-900/85 backdrop-blur-lg rounded-2xl p-8 max-w-md w-full border border-white/20 animate-modal-enter"
+            style={{ filter: "url(#glass-effect)" }}
+          >
+            <h3 className="text-2xl font-medium text-white mb-6">Login</h3>
             <form onSubmit={handleLogin}>
               <input
                 type="email"
                 placeholder="Email"
                 value={credentials.email}
                 onChange={(e) => setCredentials({ ...credentials, email: e.target.value })}
-                className="w-full p-2 border rounded mb-3 text-black"
+                className="w-full p-3 bg-gray-800/50 border border-white/20 rounded-lg mb-4 text-white placeholder-white/50 focus:border-teal-400 focus:outline-none"
                 required
               />
               <input
@@ -70,17 +73,20 @@ export default function Header({ onSectionChange, currentSection }: HeaderProps)
                 placeholder="Password"
                 value={credentials.password}
                 onChange={(e) => setCredentials({ ...credentials, password: e.target.value })}
-                className="w-full p-2 border rounded mb-4 text-black"
+                className="w-full p-3 bg-gray-800/50 border border-white/20 rounded-lg mb-6 text-white placeholder-white/50 focus:border-teal-400 focus:outline-none"
                 required
               />
-              <div className="flex gap-2">
-                <button type="submit" className="flex-1 bg-teal-600 text-white py-2 rounded hover:bg-teal-700">
+              <div className="flex gap-3">
+                <button
+                  type="submit"
+                  className="flex-1 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-lg transition-colors duration-200 font-medium"
+                >
                   Login
                 </button>
                 <button
                   type="button"
                   onClick={() => setShowLogin(false)}
-                  className="flex-1 bg-gray-300 text-black py-2 rounded hover:bg-gray-400"
+                  className="flex-1 py-3 bg-gray-600/20 hover:bg-gray-600/30 text-white rounded-lg transition-colors duration-200 border border-gray-400/30"
                 >
                   Cancel
                 </button>
