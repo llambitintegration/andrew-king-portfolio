@@ -1,7 +1,8 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import type { GitHubRepository } from "@/types/github"
-import { formatRepoDate, getRepoLanguageColor } from "@/lib/github"
+import { formatRepoDate, getRepoLanguageColor, getRepositoryReadme } from "@/lib/github"
 
 interface RepositoryDetailModalProps {
   repository: GitHubRepository
@@ -10,6 +11,22 @@ interface RepositoryDetailModalProps {
 }
 
 export default function RepositoryDetailModal({ repository, isOpen, onClose }: RepositoryDetailModalProps) {
+  const [readme, setReadme] = useState<string | null>(null)
+  const [readmeLoading, setReadmeLoading] = useState(false)
+
+  useEffect(() => {
+    if (isOpen && repository) {
+      const fetchReadme = async () => {
+        setReadmeLoading(true)
+        const readmeContent = await getRepositoryReadme(repository.owner.login, repository.name)
+        setReadme(readmeContent)
+        setReadmeLoading(false)
+      }
+      
+      fetchReadme()
+    }
+  }, [isOpen, repository])
+
   if (!isOpen) return null
 
   const handleViewRepo = () => {
@@ -42,6 +59,21 @@ export default function RepositoryDetailModal({ repository, isOpen, onClose }: R
               <p className="text-white/80 text-sm leading-relaxed">
                 {repository.description}
               </p>
+            </div>
+          )}
+
+          {(readme || readmeLoading) && (
+            <div>
+              <h4 className="text-lg font-medium text-teal-300 mb-3">About</h4>
+              {readmeLoading ? (
+                <div className="text-white/60 text-sm">Loading README...</div>
+              ) : readme ? (
+                <div className="text-white/80 text-sm leading-relaxed bg-gray-800/20 rounded-lg p-3">
+                  {readme}
+                </div>
+              ) : (
+                <div className="text-white/60 text-sm">No README available</div>
+              )}
             </div>
           )}
 

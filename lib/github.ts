@@ -8,6 +8,76 @@ let repositoriesCache: GitHubRepository[] | null = null
 let cacheTimestamp: number | null = null
 const CACHE_DURATION = 5 * 60 * 1000 // 5 minutes
 
+export async function getRepositoryReadme(owner: string, repo: string): Promise<string | null> {
+  try {
+    const response = await fetch(`${GITHUB_API_BASE}/repos/${owner}/${repo}/readme`, {
+      headers: {
+        'Accept': 'application/vnd.github+json',
+        'User-Agent': 'Portfolio-Website/1.0',
+        ...(process.env.GITHUB_TOKEN && {
+          'Authorization': `Bearer ${process.env.GITHUB_TOKEN}`
+        })
+      },
+      next: { revalidate: 3600 } // Cache for 1 hour
+    })
+
+    if (!response.ok) {
+      return null
+    }
+
+    const data = await response.json()
+    
+    // GitHub returns base64 encoded content
+    const content = atob(data.content)
+    
+    // Extract first meaningful section (skip title, badges, etc.)
+    const lines = content.split('\n')
+    let description = ''
+    let foundContent = false
+    
+    for (const line of lines) {
+      const trimmed = line.trim()
+      // Skip empty lines, titles, and common badge patterns
+      if (!trimmed || 
+          trimmed.startsWith('#') || 
+          trimmed.includes('[![') || 
+          trimmed.includes('[!') ||
+          trimmed.startsWith('---')) {
+        continue
+      }
+      
+      // Found meaningful content
+      foundContent = true
+      description += trimmed + ' '
+      
+      // Stop when we have enough or hit a new section
+      if (description.length > 200 || trimmed.startsWith('##')) {
+        break
+      }
+    }
+    
+    // Fallback: if no meaningful content found, take first non-empty line
+    if (!foundContent && lines.length > 0) {
+      for (const line of lines) {
+        const trimmed = line.trim()
+        if (trimmed && !trimmed.startsWith('#')) {
+          description = trimmed
+          break
+        }
+      }
+    }
+    
+    // Limit to 250 characters and clean up
+    return description.length > 250 
+      ? description.substring(0, 247).trim() + '...'
+      : description.trim()
+      
+  } catch (error) {
+    console.error('Error fetching README:', error)
+    return null
+  }
+}
+
 export async function getGitHubRepositories(): Promise<GitHubApiResponse> {
   try {
     // Check if we have valid cached data
