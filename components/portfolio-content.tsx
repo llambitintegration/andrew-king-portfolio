@@ -206,8 +206,8 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
               <p className="text-white/70 text-xs md:text-sm">{resume.personalInfo.title}</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 flex-1 min-h-0">
-              <div className="md:col-span-2 flex flex-col min-h-0 order-1 md:order-none">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 flex-1 min-h-0">
+              <div className="flex-1 lg:flex-[2] flex flex-col min-h-0 order-1 lg:order-none">
                 <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-1 flex flex-col min-h-0">
                   <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-3 md:mb-4 flex-shrink-0">
                     Professional Experience
@@ -215,8 +215,8 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   <div className="flex-1 overflow-y-auto custom-scrollbar space-y-4 md:space-y-6 pr-2 min-h-0">
                     {resume.professionalExperience.map((job, index) => (
                       <div key={index} className="border-l-2 border-teal-400/30 pl-4">
-                        <div className="flex justify-between items-start mb-2">
-                          <div className="flex-1">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 sm:gap-2 mb-2">
+                          <div className="flex-1 min-w-0">
                             <h4 className="font-medium text-white">{job.position}</h4>
                             <p className="text-teal-300 text-sm">
                               {job.company} • {job.location}
@@ -225,7 +225,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                           </div>
                           <button
                             onClick={() => openJobModal(job)}
-                            className="ml-4 px-3 py-1 bg-teal-600/20 hover:bg-teal-600/30 text-teal-200 text-xs rounded-full border border-teal-400/30 transition-colors duration-200 flex-shrink-0"
+                            className="sm:ml-4 px-3 py-1 bg-teal-600/20 hover:bg-teal-600/30 text-teal-200 text-xs rounded-full border border-teal-400/30 transition-colors duration-200 flex-shrink-0 self-start"
                           >
                             View Details
                           </button>
@@ -268,8 +268,8 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                     ) : (
                       repositories.slice(0, 6).map((repo) => (
                         <div key={repo.id} className="border-l-2 border-teal-400/30 pl-4">
-                          <div className="flex justify-between items-start mb-2">
-                            <div className="flex-1">
+                          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 sm:gap-2 mb-2">
+                            <div className="flex-1 min-w-0">
                               <h4 className="font-medium text-white">{repo.name}</h4>
                               <p className="text-teal-300 text-sm">
                                 {repo.language && (
@@ -288,16 +288,16 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                                 Updated {formatRepoDate(repo.updated_at)}
                               </p>
                             </div>
-                            <div className="flex gap-2 ml-4 flex-shrink-0">
+                            <div className="flex flex-wrap gap-2 sm:ml-4 sm:flex-shrink-0">
                               <button
                                 onClick={() => openRepoModal(repo)}
-                                className="px-3 py-1 bg-teal-600/20 hover:bg-teal-600/30 text-teal-200 text-xs rounded-full border border-teal-400/30 transition-colors duration-200"
+                                className="px-3 py-1 bg-teal-600/20 hover:bg-teal-600/30 text-teal-200 text-xs rounded-full border border-teal-400/30 transition-colors duration-200 flex-shrink-0"
                               >
                                 View Details
                               </button>
                               <button
                                 onClick={() => window.open(repo.html_url, '_blank', 'noopener,noreferrer')}
-                                className="px-3 py-1 bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 text-xs rounded-full border border-blue-400/30 transition-colors duration-200"
+                                className="px-3 py-1 bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 text-xs rounded-full border border-blue-400/30 transition-colors duration-200 flex-shrink-0"
                               >
                                 View Repo
                               </button>
@@ -340,7 +340,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                 </div>
               </div>
 
-              <div className="flex flex-col space-y-4 md:space-y-6 min-h-0 order-2 md:order-none">
+              <div className="flex flex-col lg:flex-[1] space-y-4 lg:space-y-6 min-h-0 order-2 lg:order-none">
                 <div className="block md:hidden bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 flex-shrink-0">
                   <h3 className="text-lg font-medium text-teal-300 mb-4">Education</h3>
                   <div className="border-l-2 border-teal-400/30 pl-4">
