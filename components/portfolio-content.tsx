@@ -248,11 +248,11 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                 </div>
 
                 {/* GitHub Repositories Section */}
-                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 mt-4 md:mt-6 flex-shrink-0">
-                  <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-3 md:mb-4">
+                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 lg:p-6 mt-4 lg:mt-6 flex-shrink-0">
+                  <h3 className="text-lg lg:text-xl font-medium text-teal-300 mb-3 lg:mb-4">
                     GitHub Repositories
                   </h3>
-                  <div className="space-y-4 max-h-64 overflow-y-auto custom-scrollbar pr-2">
+                  <div className="space-y-4 max-h-64 lg:max-h-80 overflow-y-auto custom-scrollbar pr-2">
                     {repositoriesLoading ? (
                       <div className="flex items-center justify-center py-8">
                         <div className="text-white/60 text-sm">Loading repositories...</div>
@@ -328,8 +328,8 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   </div>
                 </div>
 
-                <div className="hidden md:block bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 mt-4 md:mt-6 flex-shrink-0">
-                  <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-4">Education</h3>
+                <div className="hidden lg:block bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 lg:p-6 mt-4 lg:mt-6 flex-shrink-0">
+                  <h3 className="text-lg lg:text-xl font-medium text-teal-300 mb-4">Education</h3>
                   <div className="border-l-2 border-teal-400/30 pl-4">
                     <h4 className="font-medium text-white">{resume.education.degree}</h4>
                     <p className="text-teal-300 text-sm">{resume.education.major}</p>
@@ -341,7 +341,7 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
               </div>
 
               <div className="flex flex-col lg:flex-[1] space-y-4 lg:space-y-6 min-h-0 order-2 lg:order-none">
-                <div className="block md:hidden bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 flex-shrink-0">
+                <div className="block lg:hidden bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 flex-shrink-0">
                   <h3 className="text-lg font-medium text-teal-300 mb-4">Education</h3>
                   <div className="border-l-2 border-teal-400/30 pl-4">
                     <h4 className="font-medium text-white">{resume.education.degree}</h4>
@@ -352,22 +352,31 @@ export default function PortfolioContent({ currentSection, onSectionChange }: Po
                   </div>
                 </div>
 
-                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-shrink-0">
-                  <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-4">Contact</h3>
-                  <div className="space-y-2 text-sm">
-                    <p className="text-white/70">{resume.personalInfo.location.fullLocation}</p>
-                    <p className="text-white/70">{resume.personalInfo.contact.phoneFormatted}</p>
-                    <p className="text-white/70">{resume.personalInfo.contact.email}</p>
+                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 lg:p-6 flex-shrink-0">
+                  <h3 className="text-lg lg:text-xl font-medium text-teal-300 mb-4">Contact</h3>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+                      <span className="text-teal-300 font-medium sm:w-20 flex-shrink-0">Location:</span>
+                      <span className="text-white/70">{resume.personalInfo.location.fullLocation}</span>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+                      <span className="text-teal-300 font-medium sm:w-20 flex-shrink-0">Phone:</span>
+                      <span className="text-white/70">{resume.personalInfo.contact.phoneFormatted}</span>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+                      <span className="text-teal-300 font-medium sm:w-20 flex-shrink-0">Email:</span>
+                      <span className="text-white/70 break-all">{resume.personalInfo.contact.email}</span>
+                    </div>
                   </div>
                 </div>
 
-                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 md:p-6 flex-shrink-0">
-                  <h3 className="text-lg md:text-xl font-medium text-teal-300 mb-4">Languages</h3>
-                  <div className="space-y-2">
+                <div className="bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 lg:p-6 flex-shrink-0">
+                  <h3 className="text-lg lg:text-xl font-medium text-teal-300 mb-4">Languages</h3>
+                  <div className="space-y-3">
                     {resume.languages.map((lang, index) => (
-                      <div key={index} className="flex justify-between text-sm">
-                        <span className="text-white">{lang.language}</span>
-                        <span className="text-white/70">{lang.proficiency}</span>
+                      <div key={index} className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-2 text-sm">
+                        <span className="text-white font-medium">{lang.language}</span>
+                        <span className="text-white/70 sm:text-right">{lang.proficiency}</span>
                       </div>
                     ))}
                   </div>
