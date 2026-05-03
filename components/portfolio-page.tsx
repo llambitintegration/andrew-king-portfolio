@@ -229,8 +229,9 @@ function About({ resume }: { resume: ReturnType<typeof getResume> }) {
               The work, in <em>plain language</em>.
             </h2>
             <p>
-              Deep working knowledge of Beckhoff TwinCAT &amp; EtherCAT, Siemens (TIA Portal, S7-1500), and Allen
-              Bradley ecosystems — with strong Python, C#, and TypeScript proficiency.
+              From PLC structured text and EtherCAT fieldbus to FastAPI services, vector databases, and agentic AI —
+              fluent across Beckhoff, Siemens, Allen Bradley, and B&amp;R controls; FANUC, KUKA, Universal Robots, and
+              Yaskawa robotics; with applied software in Python, TypeScript, and Rust.
             </p>
           </div>
         </div>
@@ -272,15 +273,15 @@ function About({ resume }: { resume: ReturnType<typeof getResume> }) {
               </div>
               <div className="ak-stat">
                 <div className="ak-num">
-                  $1<em>M</em>+
-                </div>
-                <div className="ak-lbl">Overhead removed</div>
-              </div>
-              <div className="ak-stat">
-                <div className="ak-num">
                   25<em>%</em>
                 </div>
                 <div className="ak-lbl">Downtime reduction</div>
+              </div>
+              <div className="ak-stat">
+                <div className="ak-num">
+                  8<em>+</em>
+                </div>
+                <div className="ak-lbl">Industries touched</div>
               </div>
             </div>
           </div>
@@ -369,6 +370,55 @@ function ExperienceCard({
         {job.media?.kind === "youtube" && (
           <YouTubeEmbed videoId={job.media.videoId} title={job.media.title} caption={job.media.caption} />
         )}
+        {job.media?.kind === "video" && (
+          <figure className="ak-video">
+            <video
+              className="ak-video-frame"
+              src={job.media.src}
+              poster={job.media.poster}
+              controls
+              preload="metadata"
+              playsInline
+            />
+            {job.media.caption && <figcaption className="ak-video-caption">{job.media.caption}</figcaption>}
+          </figure>
+        )}
+        {job.videos && job.videos.length > 0 && (
+          <ul className="ak-videos">
+            {job.videos.map((v) => (
+              <li key={v.src} className="ak-videos-item">
+                <figure className="ak-video">
+                  <video
+                    className="ak-video-frame"
+                    src={v.src}
+                    poster={v.poster}
+                    controls
+                    preload="metadata"
+                    playsInline
+                  />
+                  {v.caption && <figcaption className="ak-video-caption">{v.caption}</figcaption>}
+                </figure>
+              </li>
+            ))}
+          </ul>
+        )}
+        {job.gallery && job.gallery.length > 0 && (
+          <ul className="ak-gallery">
+            {job.gallery.map((g) => {
+              const Tag = g.href ? "a" : "div"
+              const tagProps = g.href ? { href: g.href, target: "_blank" as const, rel: "noopener noreferrer" } : {}
+              return (
+                <li key={g.src} className="ak-gallery-item">
+                  <Tag className="ak-gallery-link" {...tagProps}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={g.src} alt={g.alt} loading="lazy" />
+                    {g.caption && <span className="ak-gallery-caption">{g.caption}</span>}
+                  </Tag>
+                </li>
+              )
+            })}
+          </ul>
+        )}
         {job.relevantSkills && job.relevantSkills.length > 0 && (
           <div className="ak-tags">
             {job.relevantSkills.map((t, i) => (
@@ -380,7 +430,12 @@ function ExperienceCard({
         )}
       </div>
       {more.length > 0 ? (
-        <button className="ak-toggle" aria-label="Toggle details" onClick={() => setOpen((v) => !v)}>
+        <button
+          className="ak-toggle"
+          aria-label="Toggle details"
+          aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}
+        >
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
             <path d="M8 3v10M3 8h10" />
           </svg>
@@ -403,8 +458,8 @@ function Experience({ resume }: { resume: ReturnType<typeof getResume> }) {
               Where I&rsquo;ve <em>shipped</em>.
             </h2>
             <p>
-              Five roles across robotics integration, controls engineering, and full-stack automation product
-              development. Click any entry for the full responsibility set.
+              Roles spanning robotics integration, controls engineering, full-stack automation, ocean-going research,
+              and ISS flight operations. Click any entry for the full responsibility set.
             </p>
           </div>
         </div>
@@ -500,28 +555,33 @@ function Projects() {
           </div>
         </div>
         <div className="ak-repos">
-          {visible.map((p) => (
-            <a
-              key={p.name}
-              className="ak-repo ak-glass"
-              href={p.href ?? "#"}
-              target={p.href ? "_blank" : undefined}
-              rel={p.href ? "noopener noreferrer" : undefined}
-            >
-              <div className="ak-top">
-                <span className="ak-name">{p.name}</span>
-                <span className="ak-lang">
-                  <span className="ak-swatch" style={{ background: p.color }} />
-                  {p.language}
-                </span>
+          {visible.map((p) => {
+            const inner = (
+              <>
+                <div className="ak-top">
+                  <span className="ak-name">{p.name}</span>
+                  <span className="ak-lang">
+                    <span className="ak-swatch" style={{ background: p.color }} />
+                    {p.language}
+                  </span>
+                </div>
+                <p>{p.description}</p>
+                <div className="ak-meta">
+                  <span>{p.year}</span>
+                  {p.href && <span className="ak-arrow">→ open</span>}
+                </div>
+              </>
+            )
+            return p.href ? (
+              <a key={p.name} className="ak-repo ak-glass" href={p.href} target="_blank" rel="noopener noreferrer">
+                {inner}
+              </a>
+            ) : (
+              <div key={p.name} className="ak-repo ak-glass">
+                {inner}
               </div>
-              <p>{p.description}</p>
-              <div className="ak-meta">
-                <span>{p.year}</span>
-                <span className="ak-arrow">→ open</span>
-              </div>
-            </a>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>

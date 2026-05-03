@@ -19,57 +19,71 @@ export const ResumeSchema = z.object({
     tagline: z.string(),
     availability: z.string(),
   }),
-  professionalSummary: z.object({
-    headline: z.string(),
-    description: z.string(),
-    keyStrengths: z.array(z.string()),
-  }),
   coreCompetencies: z.object({
-    primarySkills: z.array(z.object({
-      category: z.string(),
-      skills: z.array(z.string()),
-    })),
+    primarySkills: z.array(
+      z.object({
+        category: z.string(),
+        skills: z.array(z.string()),
+      }),
+    ),
     additionalSkills: z.array(z.string()),
   }),
-  professionalExperience: z.array(z.object({
-    position: z.string(),
-    company: z.string(),
-    location: z.string(),
-    duration: z.string(),
-    responsibilities: z.array(z.string()),
-    relevantSkills: z.array(z.string()).optional(),
-  })),
+  professionalExperience: z.array(
+    z.object({
+      position: z.string(),
+      company: z.string(),
+      location: z.string(),
+      duration: z.string(),
+      responsibilities: z.array(z.string()),
+      relevantSkills: z.array(z.string()).optional(),
+      media: z
+        .union([
+          z.object({
+            kind: z.literal("youtube"),
+            videoId: z.string(),
+            title: z.string(),
+            caption: z.string().optional(),
+          }),
+          z.object({
+            kind: z.literal("video"),
+            src: z.string(),
+            title: z.string(),
+            caption: z.string().optional(),
+            poster: z.string().optional(),
+          }),
+        ])
+        .optional(),
+      gallery: z
+        .array(
+          z.object({
+            src: z.string(),
+            alt: z.string(),
+            caption: z.string().optional(),
+            href: z.string().optional(),
+          }),
+        )
+        .optional(),
+      videos: z
+        .array(
+          z.object({
+            src: z.string(),
+            title: z.string().optional(),
+            caption: z.string().optional(),
+            poster: z.string().optional(),
+          }),
+        )
+        .optional(),
+    }),
+  ),
   education: z.object({
     degree: z.string(),
     major: z.string(),
     minor: z.string(),
     institution: z.string(),
     graduationYear: z.string(),
-    relevantCoursework: z.array(z.string()),
   }),
-  keyAchievements: z.array(z.string()),
-  languages: z.array(z.object({
-    language: z.string(),
-    proficiency: z.string(),
-    skills: z.array(z.string()),
-  })),
-  technicalSkills: z.object({
-    softwareProficiency: z.array(z.object({
-      category: z.string(),
-      applications: z.array(z.string()),
-      proficiencyLevel: z.string(),
-    })),
-    administrativeSkills: z.array(z.string()),
-  }),
-  personalQualities: z.array(z.object({
-    quality: z.string(),
-    description: z.string(),
-  })),
 })
 
 export type Resume = z.infer<typeof ResumeSchema>
-export type ProfessionalExperience = Resume['professionalExperience'][0]
-export type CoreCompetency = Resume['coreCompetencies']['primarySkills'][0]
-export type Language = Resume['languages'][0]
-export type TechnicalSkillCategory = Resume['technicalSkills']['softwareProficiency'][0]
-export type PersonalQuality = Resume['personalQualities'][0]
+export type ProfessionalExperience = Resume["professionalExperience"][0]
+export type CoreCompetency = Resume["coreCompetencies"]["primarySkills"][0]

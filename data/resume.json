@@ -4,10 +4,10 @@
     "title": "AI/ML Engineer & Automation Systems Developer",
     "subtitle": "Industrial Robotics | Machine Learning | Controls Integration",
     "location": {
-      "city": "San Antonio",
+      "city": "Austin",
       "state": "TX",
       "zipCode": "",
-      "fullLocation": "San Antonio, TX"
+      "fullLocation": "Austin, TX"
     },
     "contact": {
       "email": "acking1187@gmail.com",
@@ -17,154 +17,492 @@
     "tagline": "AI/ML Engineer specializing in Industrial Robotics and Intelligent Automation Systems",
     "availability": "Current"
   },
-  "professionalSummary": {
-    "headline": "AI/ML Engineer & Industrial Robotics Expert",
-    "description": "Experienced AI/ML engineer with deep expertise in industrial robotics and intelligent automation systems. 10+ years of applied experience spanning research, engineering, and full-stack development. Specialized in developing turn-key Machine Learning solutions for collaborative robotics, manufacturing optimization, and enterprise automation platforms using Python/FastAPI, PostgreSQL, and modern AI frameworks.",
-    "keyStrengths": [
-      "AI/ML Systems Development (FastAPI, TensorFlow, PyTorch)",
-      "Industrial Robotics Integration & Automation",
-      "Full Stack Development (Python, React, TypeScript)",
-      "Database Systems & Data Engineering (PostgreSQL, Vector DBs)",
-      "DevOps & Cloud Infrastructure (Docker, Azure, CI/CD)",
-      "Controls Programming & PLC Systems"
-    ]
-  },
   "coreCompetencies": {
     "primarySkills": [
       {
-        "category": "AI/ML Development",
-        "skills": ["Python/FastAPI", "TensorFlow", "PyTorch", "LangChain", "Vector Databases", "PostgreSQL", "OpenAI API", "K-means Clustering", "Computer Vision"]
+        "category": "AI / ML / Data",
+        "skills": [
+          "Python/FastAPI",
+          "TensorFlow",
+          "PyTorch",
+          "LangChain",
+          "Model Context Protocol",
+          "Vector Databases",
+          "OpenAI API",
+          "K-means Clustering",
+          "Computer Vision"
+        ]
       },
       {
-        "category": "Full Stack Development",
-        "skills": ["React/TypeScript", "Next.js", "FastAPI", "RESTful APIs", "Microservices", "Docker", "Azure", "Git/CI/CD"]
+        "category": "Programming Languages",
+        "skills": [
+          "Python (Advanced)",
+          "C/C++",
+          ".NET",
+          "Rust",
+          "Go",
+          "Java",
+          "JavaScript/TypeScript",
+          "Bash",
+          "SQL",
+          "Git"
+        ]
       },
       {
-        "category": "Robotics & Automation",
-        "skills": ["FANUC", "KUKA", "Universal Robots", "PLC Programming", "Vision Systems", "SCARA Robots", "TCP/IP", "MQTT"]
+        "category": "PLC & Controls",
+        "skills": [
+          "Beckhoff TwinCAT 3",
+          "EtherCAT",
+          "Allen Bradley (Ethernet/IP, CIP Safety, Studio 5000)",
+          "Siemens (PROFINET, S7-1500, TIA Portal)",
+          "B&R Automation",
+          "Ignition (Perspective / Vision)",
+          "PackML",
+          "Modbus TCP/RTU",
+          "Structured Text",
+          "Function Blocks",
+          "ADS Protocol"
+        ]
       },
       {
-        "category": "Controls Systems",
-        "skills": ["Allen Bradley", "Siemens TIA Portal", "Beckhoff TwinCAT", "Ignition SCADA", "HMI Development", "Industrial Networks"]
+        "category": "Robotics",
+        "skills": [
+          "FANUC",
+          "KUKA (KRC2/KRC4/Sunrise.OS)",
+          "Universal Robots",
+          "Yaskawa Motoman",
+          "ATI",
+          "Schunk",
+          "Schmalz",
+          "OnRobot"
+        ]
       },
       {
-        "category": "Data & Infrastructure",
-        "skills": ["PostgreSQL", "MongoDB", "SQL", "AWS", "Docker", "Terraform", "Linux", "PowerShell", "Data Pipeline Design"]
+        "category": "Safety Controls",
+        "skills": [
+          "TwinSAFE",
+          "PROFIsafe",
+          "CIP Safety",
+          "ReeR",
+          "SICK",
+          "IDEM / IDEC",
+          "AB Guardmaster",
+          "Euchner",
+          "Safety Interlocks"
+        ]
+      },
+      {
+        "category": "Control Algorithms",
+        "skills": ["PID", "Kalman Filters", "Signal Conditioning", "Robot Path Planning"]
+      },
+      {
+        "category": "Backend & Data",
+        "skills": [
+          "REST APIs",
+          "GraphQL",
+          "FastAPI",
+          "Microservices",
+          "Async Programming",
+          "pytest",
+          "PostgreSQL",
+          "MongoDB",
+          "InfluxDB",
+          "SQL Optimization",
+          "Data Modeling"
+        ]
+      },
+      {
+        "category": "Security Engineering",
+        "skills": [
+          "ICS Security Platforms",
+          "Azure Security Frameworks",
+          "Vulnerability Assessment",
+          "Threat Intelligence",
+          "Compliance Workflows"
+        ]
+      },
+      {
+        "category": "DevOps & Infrastructure",
+        "skills": ["Docker", "Azure", "AWS", "CI/CD Pipelines", "Containerization", "Deployment Automation", "Linux"]
+      },
+      {
+        "category": "IT/OT",
+        "skills": [
+          "Managed Switches",
+          "MQTT",
+          "OPC-UA",
+          "SCADA",
+          "StrideLinx VPN",
+          "Tailscale",
+          "VLAN Segmentation",
+          "Industrial Firewalls",
+          "Edge Gateways",
+          "Historians",
+          "DMZ Architecture",
+          "Remote Monitoring"
+        ]
+      },
+      {
+        "category": "Logistics",
+        "skills": [
+          "MES / ERP",
+          "Inventory Management",
+          "Procurement-to-Inventory Pipeline",
+          "BOM Management",
+          "LOTO",
+          "Forklift Operator",
+          "Scissor Lift Operator",
+          "Boom Lift Operator"
+        ]
+      },
+      {
+        "category": "Fabrication",
+        "skills": [
+          "Mill (manual & CNC)",
+          "Lathe (manual & CNC)",
+          "CNC Fiber Laser",
+          "Additive Manufacturing",
+          "SLS",
+          "Extrusion",
+          "3D Printing"
+        ]
+      },
+      {
+        "category": "Standards & Compliance",
+        "skills": [
+          "ANSI/RIA R15.06",
+          "ISO 10218",
+          "UL 508A",
+          "NFPA 70 (NEC)",
+          "NFPA 79",
+          "IEC 61131-3",
+          "ISO 13849",
+          "OSHA 29 CFR 1910",
+          "GMP / FDA 21 CFR Part 11",
+          "ISO 14644 (Cleanroom)",
+          "ANSI/ISA-88",
+          "ANSI/ISA-95",
+          "PackML",
+          "HACCP",
+          "3-A Sanitary"
+        ]
       }
     ],
-    "additionalSkills": [
-      "Machine Learning Model Deployment",
-      "Computer Vision & Image Recognition",
-      "IoT Data Processing & Edge Computing",
-      "Manufacturing Execution Systems (MES)",
-      "Performance Monitoring & Analytics",
-      "Risk Assessment & Safety Systems",
-      "Technical Leadership & Mentoring"
-    ]
+    "additionalSkills": []
   },
   "professionalExperience": [
     {
-      "position": "Senior Full Stack Developer (AI/ML Focus)",
-      "company": "Llambit Integration, LLC",
-      "location": "San Antonio, TX",
-      "duration": "Current Contract",
-      "responsibilities": [
-        "Architect enterprise AI/ML applications using Python/FastAPI backends with React/TypeScript frontends in multi-tenant SaaS architectures",
-        "Project Moose (ICS Security Platform) - Lead Python/FastAPI development with AI-powered threat intelligence using Model Context Protocol (MCP), Shodan API integration, and automated vulnerability assessment systems",
-        "Project Honeybee (FinTech Platform) - Built complete MERN stack system with ML-driven KYC/AML automation, regulatory compliance workflows, and microservices deployment on Azure",
-        "Project Wolf (IoT Platform) - Developed Ignition-based Docker containers for real-time IoT data processing, edge computing integration, and industrial hardware management with cellular/LoRa networks"
-      ],
-      "relevantSkills": ["Python/FastAPI", "React/TypeScript", "PostgreSQL/MongoDB", "Docker", "Azure", "AI/ML Integration", "Model Context Protocol", "Microservices", "IoT Systems"]
-    },
-    {
-      "position": "Principal Electrical Engineer (AI Integration)",
-      "company": "ECOLAB",
-      "location": "San Antonio, TX",
-      "duration": "Oct 2024 - June 2025",
-      "responsibilities": [
-        "Lead controls system designer for automated clean-in-place systems with automotive-grade reliability standards in Food and Beverage industry",
-        "Design and implement AI-enhanced process control systems for valve, temperature, and pressure management with real-time optimization algorithms",
-        "Developed AI-integrated inventory database using computer vision and image recognition with projected cost savings of +$1M over 2025",
-        "Implemented standardized programming templates and automated documentation systems, reducing design time by 15% through intelligent workflow optimization"
-      ],
-      "relevantSkills": ["Rockwell Automation", "Allen Bradley", "Process Control", "Computer Vision", "AI Integration", "Python Automation", "Database Systems"]
-    },
-    {
-      "position": "Owner and Lead Integration Engineer",
-      "company": "LlamBit Integration, LLC",
+      "position": "Senior Solutions Engineer",
+      "company": "RobCo",
       "location": "Austin, TX",
-      "duration": "Feb 2023 - Current",
+      "duration": "Oct 2025 - Present",
       "responsibilities": [
-        "Designed AI-enhanced semiconductor automation system using SCARA robots for wafer handling with intelligent path planning and Bosch servo control via TCP socket messaging",
-        "Developed autonomous mobile coffee kiosk with ML-driven customer interaction, MQTT communication, SCARA robot integration, and Beckhoff controls",
-        "Implemented robot welding applications with KUKA systems using computer vision guidance and adaptive control algorithms",
-        "Managed automated risk assessment systems for production environments and developed ML-based predictive maintenance solutions"
+        "Serve as technical lead for US customer deployments of multi-robot automation lines — driving controls architecture, on-site commissioning, and customer acceptance testing across industrial manufacturing environments",
+        "Architect Siemens S7-1500 / TIA Portal control systems for PROFINET robot networks, including PackML state machine, Modbus TCP VFD integration, and robot job-selection and recipe management",
+        "Lead customer-facing technical engagements: on-site discovery, solution whiteboarding, prototype guidance, and structured operator training programs designed for long-term customer self-sufficiency",
+        "Design and iterate end-of-arm tooling (Autodesk Fusion 360) across 3D-printed prototyping and live production validation cycles",
+        "Diagnose and resolve hardware and firmware issues across multi-unit robot fleets via remote (Stridelinx VPN) and on-site troubleshooting; deliver structured root-cause reports to Germany-based engineering teams"
       ],
-      "relevantSkills": ["SCARA Robots", "KUKA", "FANUC", "Universal Robots", "Beckhoff", "TCP/IP", "MQTT", "Computer Vision", "ML Algorithms", "Predictive Analytics"]
+      "relevantSkills": [
+        "Siemens S7-1500",
+        "TIA Portal",
+        "PROFINET",
+        "Modbus TCP",
+        "PackML",
+        "Autodesk Fusion 360",
+        "Stridelinx",
+        "Customer Commissioning",
+        "EOAT Design"
+      ],
+      "media": {
+        "kind": "video",
+        "src": "/videos/robco-copack-2025.mp4",
+        "title": "RobCo — 8-robot beverage co-packing line",
+        "caption": "8-robot integration for a beverage co-packing line designed at 7,200 cans/hr (Dec 2025)"
+      }
     },
     {
-      "position": "AI/ML Research Participant",
-      "company": "The Multiverse School",
+      "position": "Volunteer Work",
+      "company": "ASMBLY Makerspace · The Multiverse School",
       "location": "Austin, TX",
-      "duration": "2024 - Current",
+      "duration": "2024 - Present",
       "responsibilities": [
-        "Advanced AI education cooperative focused on industrial applications of large language models and autonomous systems",
-        "Developed embeddings analysis tool processing +75k messages in PostgreSQL database for manufacturing knowledge management systems",
-        "Implemented K-means clustering and semantic analysis algorithms to automatically categorize and retrieve technical documentation",
-        "Research focus on integrating LLMs with industrial automation and robotics control systems"
+        "ASMBLY Makerspace (Austin, TX) — leading the rebuild of the shop's 5-axis fiber-laser gantry CNC: integrating a 2.2 kW Raycus fiber-laser source, overhauling motion control across all five axes, and designing the safety enclosure and interlock system (light curtains, door interlocks, beam-block reset logic, Class-1-by-enclosure architecture) for member access",
+        "The Multiverse School (gen-AI / agentic-software education program) — advisory SME on open-source robotics and the security-vulnerability landscape of edge / controls networks at the IT/OT intersection; volunteer researcher contributing course material and applied-research workstreams across prompt engineering, AI alignment, and agentic workflows"
       ],
-      "relevantSkills": ["Large Language Models", "PostgreSQL", "K-means Clustering", "Embeddings", "Semantic Analysis", "Knowledge Management", "Python Data Science"]
+      "relevantSkills": [
+        "ASMBLY Makerspace",
+        "Fiber Laser Gantry",
+        "2.2 kW Raycus Fiber Laser",
+        "5-axis CNC",
+        "Safety Enclosure Integration",
+        "Light Curtains",
+        "Interlocks",
+        "The Multiverse School",
+        "Generative AI",
+        "Prompt Engineering",
+        "AI Alignment",
+        "Agentic Workflows",
+        "Open-source Education"
+      ],
+      "videos": [
+        {
+          "src": "/videos/asmbly-2025.mp4",
+          "caption": "ASMBLY Makerspace — 5-axis fiber-laser gantry rebuild (Austin, TX, Mar 2025)"
+        },
+        {
+          "src": "/videos/multiverse-2024.mp4",
+          "caption": "The Multiverse School — tutorial build of the SO-100 open-source teleoperated robotic arm with the Pi.0 autonomous control platform"
+        },
+        {
+          "src": "/videos/agentic-sdlc-2026.mp4",
+          "caption": "Agentic SDLC platform — Grafana dashboard view (Apr 2026)"
+        }
+      ]
     },
     {
-      "position": "Advanced Manufacturing Volunteer",
-      "company": "ASMBLY Makerspace",
+      "position": "Technical Co-Founder",
+      "company": "Stealth Startup",
       "location": "Austin, TX",
-      "duration": "2024 - Current",
+      "duration": "May 2024 - Oct 2025",
       "responsibilities": [
-        "Led comprehensive upgrade of industrial fiber laser CNC system, replacing IPG 750W with Raycus 2.2kW through data-driven project management",
-        "Implemented automotive-grade safety standards with dual-channel E-Stop interlocks and intelligent monitoring systems",
-        "Applied systematic troubleshooting methodologies and diagnostic algorithms to resolve complex electrical integration challenges"
+        "Led Project Lark: architected and shipped an agentic automation platform in Python (OOP, async), integrating LLM task orchestration with structured workflow automation for engineering productivity applications",
+        "Led Project Moose: designed and built an operations and work-management platform unifying inventory tracking (with QR codes and CSV bulk import), resource capacity management (personnel, equipment, skills, allocations), and enhanced task management on a React/TypeScript + Node/Express + PostgreSQL stack with real-time WebSocket sync and Docker-based deployment",
+        "Delivered Project Sparrow: enterprise automation MVP for an insurance-sector client combining image-recognition APIs with a PostgreSQL backend — projected to eliminate $1M+ in manual operational overhead",
+        "Built a containerized IoT edge-processing service (Docker) with real-time telemetry storage, SQL-backed result history, and operational performance monitoring dashboards",
+        "Designed and maintained an ICS security automation platform with REST API integrations, secrets management, and compliance audit logging"
       ],
-      "relevantSkills": ["Industrial Safety Systems", "Electrical Troubleshooting", "Project Management", "Diagnostic Systems", "CNC Automation"]
+      "relevantSkills": [
+        "Python (OOP)",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "FastAPI",
+        "PostgreSQL",
+        "Prisma",
+        "Socket.io",
+        "Docker",
+        "REST APIs",
+        "IIoT/OT Integration",
+        "ICS Security"
+      ]
     },
     {
       "position": "Automation & Controls Engineer",
       "company": "CelLink Corporation",
       "location": "Georgetown, TX",
-      "duration": "May 2024 - Feb 2023",
+      "duration": "Feb 2023 - May 2024",
       "responsibilities": [
-        "Integrated intelligent roll-to-roll manufacturing systems for laminated circuit materials with automated quality control",
-        "Developed OPC-UA client systems for recipe management with enterprise-wide data integration and real-time analytics",
-        "Created advanced HMI applications using Ignition Perspective and Allen Bradley PanelView with data visualization and performance monitoring",
-        "Implemented ML-enhanced error-proofing systems and predictive analytics that reduced equipment downtime by 25%"
+        "Engineered Beckhoff TwinCAT 3 / EtherCAT motion and CNC control systems for high-speed roll-to-roll manufacturing of laminated flexible circuits, coordinating servo axes across web tension, registration, and indexing operations",
+        "Integrated FANUC CNC laser processing cells (cutting and welding) via direct servo integration over EtherCAT using the CiA 402 drive profile, with TwinCAT CNC coordinating motion and vision feedback for in-line feature placement on flex-circuit substrates",
+        "Built a hipot circuit-test gantry on Beckhoff CNC kinematics — multi-axis positioning, probe contact sequencing, and pass/fail data capture tied into the line MES",
+        "Developed Ignition Perspective HMI/SCADA projects on top of the Beckhoff PC-based control platform, delivering operator workflows across the full production line",
+        "Built an OPC-UA client for recipe management and enterprise-wide data integration; implemented error-proofing and performance indicators that reduced downtime by 25%"
       ],
-      "relevantSkills": ["Allen Bradley", "RSLogix 5000", "Studio 5000", "Ignition SCADA", "OPC-UA", "HMI Development", "Predictive Analytics", "Manufacturing Systems"]
+      "relevantSkills": [
+        "Beckhoff TwinCAT 3",
+        "TwinCAT CNC",
+        "EtherCAT",
+        "CiA 402",
+        "TwinSAFE",
+        "FANUC CNC",
+        "Direct Servo Integration",
+        "Motion Control",
+        "Servo Tuning",
+        "Roll-to-Roll",
+        "Laser Cutting",
+        "Laser Welding",
+        "Hipot Test",
+        "Gantry Systems",
+        "Ignition (Perspective)",
+        "OPC-UA"
+      ]
     },
     {
       "position": "Automation Engineer",
       "company": "Noveon Magnetics",
-      "location": "San Marcos, TX",
-      "duration": "Feb 2023 - July 2020",
+      "location": "Austin, TX",
+      "duration": "July 2020 - Feb 2023",
       "responsibilities": [
-        "Developed standardized PLC programming frameworks using Allen Bradley RSLogix 5000 and Studio 5000 with modular, reusable code architecture",
-        "Designed intelligent robot cells with Siemens PLC integration for automated de-palletizing with adaptive control algorithms",
-        "Created computer vision-guided EOAT solutions enhancing precision in automated parts handling and quality inspection",
-        "Implemented RIA 15.06 compliant safety systems with intelligent area scanners and adaptive light curtain configurations"
+        "Automated the recycling and production of NdFeB rare-earth magnets — vacuum sintering furnaces and high-temperature electromagnetic presses operating in null-oxygen (inert) environments",
+        "Built Siemens-based controls end to end on S7-1500 / TIA Portal, including PROFINET I/O, safety, and HMI for furnace and press cells",
+        "Designed and integrated Yaskawa robot cells with Schunk servo end-of-arm tooling for material handling between processing stages",
+        "Owned mechanical design of fixtures, EOAT, and process tooling in SolidWorks; supported builds through prototyping and commissioning"
       ],
-      "relevantSkills": ["Allen Bradley", "PLC Programming", "Computer Vision", "EOAT Design", "Safety Systems", "Siemens", "Industrial Robotics"]
+      "relevantSkills": [
+        "Siemens S7-1500",
+        "TIA Portal",
+        "PROFINET",
+        "Yaskawa Robotics",
+        "Schunk EOAT",
+        "SolidWorks",
+        "Vacuum Sintering",
+        "Electromagnetic Press",
+        "Inert-Atmosphere Process",
+        "NdFeB Magnet Production"
+      ]
     },
     {
       "position": "Integration Engineer",
       "company": "Vicarious FPC",
       "location": "Union City, CA",
-      "duration": "June 2020 - March 2019",
+      "duration": "March 2019 - June 2020",
       "responsibilities": [
-        "Led $250K automation project integrating Allen Bradley PLC and advanced HMI systems for case packing and palletizing with real-time optimization",
-        "Managed Universal Robots deployment achieving 6-second cycle time with ±1mm precision for injection molding through adaptive control algorithms",
-        "Integrated robotics safety circuits with comprehensive risk assessment algorithms and predictive failure detection",
-        "Developed performance monitoring systems using statistical analysis to increase reliability and reduce robotic cell downtime"
+        "Led a $250K integration project delivering KUKA robotic case-packing for a food and beverage customer — full cell from infeed conveyance through palletizing handoff",
+        "Programmed line controls on B&R Automation PLC and HMI; integrated B&R safety, fieldbus I/O, and KUKA robot interfaces",
+        "Designed and deployed Schmalz vacuum end-of-arm tooling for variable case geometry, including suction-cup arrays, vacuum generators, and gripper changeover",
+        "Integrated robotics peripherals into safety circuits, executed risk assessments, and developed performance indicators to improve reliability and reduce cycle time across the cell"
       ],
-      "relevantSkills": ["KUKA", "Universal Robots", "Allen Bradley", "HMI Systems", "Performance Analytics", "Statistical Analysis", "Risk Assessment"]
+      "relevantSkills": [
+        "KUKA Robotics",
+        "B&R Automation",
+        "Schmalz Vacuum EOAT",
+        "Case Packing",
+        "Food & Beverage",
+        "Safety Integration",
+        "System Integration",
+        "Robotics Commissioning"
+      ],
+      "media": {
+        "kind": "youtube",
+        "videoId": "Zbw81gOcAR4",
+        "title": "Vicarious FPC — KUKA case-packing cell",
+        "caption": "Process video — KUKA robotic case-packing line built and commissioned at Vicarious FPC"
+      }
+    },
+    {
+      "position": "Field Service Engineer & Corporate Instructor",
+      "company": "KUKA Robotics",
+      "location": "Shelby Township, MI",
+      "duration": "Aug 2018 - Feb 2019",
+      "responsibilities": [
+        "Provided on-site field service and troubleshooting at the BMW manufacturing plant in Greenville/Spartanburg, SC — diagnosed and resolved KUKA robot issues across body-shop and assembly lines for a major automotive customer",
+        "Served as corporate KUKA instructor delivering customer and integrator training on KRC2, KRC4, and Sunrise.OS — KRL programming, controller configuration, integration patterns, and recovery procedures",
+        "Supported field commissioning and startup across multiple customer sites, working with cell builders and end users to bring KUKA installations into production",
+        "Built deep operational expertise across KUKA controller generations (KRC2 → KRC4 → Sunrise.OS / iiwa LBR) and translated complex robotics issues for both engineering and shop-floor audiences"
+      ],
+      "relevantSkills": [
+        "KUKA KRC2",
+        "KUKA KRC4",
+        "Sunrise.OS",
+        "KRL",
+        "Field Service",
+        "Corporate Training",
+        "Automotive Manufacturing",
+        "BMW",
+        "Robot Commissioning"
+      ],
+      "videos": [
+        {
+          "src": "/videos/kuka-2018-07.mp4",
+          "caption": "KUKA training — Shelby Township, MI (Jul 2018)"
+        },
+        {
+          "src": "/videos/kuka-2018-10.mp4",
+          "caption": "KUKA training — Center for Manufacturing Innovation, Greenville, SC (Oct 2018)"
+        }
+      ]
+    },
+    {
+      "position": "Console Operator & Chief Scientist — HOT Program",
+      "company": "University of Hawai'i at Mānoa — Hawai'i Ocean Time-series",
+      "location": "Honolulu, HI",
+      "duration": "Feb 2017 - Aug 2018",
+      "responsibilities": [
+        "Console operator for CTD/rosette operations on the Hawai'i Ocean Time-series (HOT) program — water-column sampling and physical oceanography measurements at Station ALOHA, ~100 km north of Oahu, supporting one of the longest continuous ocean time-series in the world (running since 1988)",
+        "Served as Chief Scientist on five weeklong at-sea excursions aboard UNOLS research vessels (R/V Kilo Moana and R/V Ka'imikai-O-Kanaloa), leading sampling operations, science-watch rotations, and at-sea logistics",
+        "Performed calibration, real-time data acquisition, and post-processing of ADCP (Acoustic Doppler Current Profiler) data for current-profile analysis across the water column",
+        "Logged 5,000+ nautical miles at sea across roughly monthly sampling cruises, working alongside SOEST oceanographers to maintain dataset continuity for hydrography, biogeochemistry, and primary-productivity records"
+      ],
+      "relevantSkills": [
+        "Hawai'i Ocean Time-series",
+        "Station ALOHA",
+        "CTD Rosette",
+        "ADCP",
+        "Physical Oceanography",
+        "Chief Scientist",
+        "R/V Kilo Moana",
+        "At-sea Calibration",
+        "Data Acquisition",
+        "Post-processing",
+        "SOEST"
+      ],
+      "media": {
+        "kind": "video",
+        "src": "/videos/hot-uhm-2018.mp4",
+        "title": "HOT cruise — at-sea operations",
+        "caption": "At-sea operations during a HOT program research cruise (Feb 2018)"
+      },
+      "gallery": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/Stern_of_the_Kilo_Moana.jpg",
+          "alt": "R/V Kilo Moana",
+          "caption": "R/V Kilo Moana — primary HOT cruise vessel (UNOLS, operated by UH SOEST)",
+          "href": "https://en.wikipedia.org/wiki/RV_Kilo_Moana"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ka%E2%80%98imikai-o-Kanaloa_at_pier_-_Expl1932.jpg",
+          "alt": "R/V Ka'imikai-O-Kanaloa (KOK)",
+          "caption": "R/V Ka'imikai-O-Kanaloa (KOK) — UH research vessel; retired 2018 after the 304th HOT cruise",
+          "href": "https://www.soest.hawaii.edu/UHMC/KOK.php"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/3/39/The_Hi%E2%80%99ialakai_%283750089426%29.jpg",
+          "alt": "NOAA R/V Hi'ialakai",
+          "caption": "NOAA R/V Hi'ialakai — joint cruises with WHOI (WHOTS mooring program)",
+          "href": "https://en.wikipedia.org/wiki/NOAAS_Hi%27ialakai_(R_334)"
+        }
+      ]
+    },
+    {
+      "position": "Subsea Operations / Glider Pilot",
+      "company": "Texas A&M University — GERG (Geochemical and Environmental Research Group)",
+      "location": "College Station, TX",
+      "duration": "Aug 2016 - Jan 2017",
+      "responsibilities": [
+        "Operated Teledyne Webb Research Slocum G2 autonomous underwater vehicles (buoyancy-driven gliders) for sustained physical oceanography missions in the Gulf of Mexico",
+        "Supported deployment, recovery, and at-sea piloting of AUVs collecting CTD (conductivity / temperature / depth), dissolved oxygen, fluorometer, and water-column profile data",
+        "Maintained and serviced glider sensor packages (SeaBird CTD, RINKO fast-response DO, ECO-PUC fluorometer) at GERG's Glider Center for Autonomous Vehicle Engineering between deployments",
+        "Coordinated mission planning, telemetry monitoring, and data QA across multi-week glider missions in coordination with NOAA-funded hypoxia research and Gulf of Mexico observing programs"
+      ],
+      "relevantSkills": [
+        "Slocum G2 Glider",
+        "Teledyne Webb",
+        "AUV Operations",
+        "CTD",
+        "Dissolved Oxygen",
+        "Physical Oceanography",
+        "Gulf of Mexico",
+        "SeaBird Sensors",
+        "Mission Planning"
+      ]
+    },
+    {
+      "position": "ISS Flight Controller — ADCO / HawkI",
+      "company": "Lockheed Martin (NASA JSC, IMOC-I / IMOC-II)",
+      "location": "Houston, TX",
+      "duration": "Dec 2014 - Apr 2016",
+      "responsibilities": [
+        "Flight controller in the ADCO (Attitude Determination and Control Officer) group at NASA Johnson Space Center under the IMOC-I and IMOC-II Mission Operations contracts — responsible for monitoring and managing ISS attitude and on-board motion-control systems in real time",
+        "Held the HawkI MPSR position — back-room support monitoring all U.S. GNC systems while the front-room ADCO coordinated with other flight controllers and MCC-Moscow",
+        "Worked in partnership with Russian flight controllers to determine and manage ISS orientation via the U.S. and Russian motion-control hardware; planned and calculated future attitudes and maneuvers, including visiting-vehicle docking and undocking sequences",
+        "Operated and monitored ISS GNC sensors and effectors — control moment gyros (CMGs), ring laser gyros, rate gyro assemblies, and Russian thruster interfaces — for state-vector and attitude determination",
+        "Trained on and supported response procedures for non-nominal scenarios: loss of attitude control, on-board fire, toxic atmosphere, micrometeoroid/orbital-debris (MMOD) strikes, and depressurization events"
+      ],
+      "relevantSkills": [
+        "NASA Mission Operations",
+        "ISS GNC",
+        "ADCO",
+        "HawkI / MPSR",
+        "Control Moment Gyros",
+        "Ring Laser Gyros",
+        "Attitude Determination",
+        "Orbital Mechanics",
+        "Real-time Flight Operations",
+        "MCC-Houston",
+        "MCC-Moscow Coordination",
+        "Lockheed Martin"
+      ]
     }
   ],
   "education": {
@@ -172,100 +510,6 @@
     "major": "Mechanical Engineering",
     "minor": "",
     "institution": "The University of Texas at Austin",
-    "graduationYear": "2014",
-    "relevantCoursework": [
-      "Control Systems & Signal Processing",
-      "Robotics & Automation",
-      "Machine Learning Algorithms",
-      "Computer Vision & Image Processing",
-      "Database Systems & Data Structures",
-      "Statistical Analysis & Optimization"
-    ]
-  },
-  "keyAchievements": [
-    "Architected AI-powered threat intelligence platform using FastAPI, Model Context Protocol, and machine learning algorithms",
-    "Developed computer vision system for inventory management with projected $1M+ cost savings through automated image recognition",
-    "Built embeddings analysis tool processing 75k+ messages with K-means clustering for manufacturing knowledge management",
-    "Reduced manufacturing design time by 15% through intelligent automation templates and workflow optimization",
-    "Achieved 6-second cycle time with ±1mm precision in robotic systems through adaptive ML control algorithms",
-    "Implemented predictive analytics systems reducing equipment downtime by 25% across multiple manufacturing environments",
-    "Successfully deployed multi-tenant SaaS architectures using Python/FastAPI, React/TypeScript, and PostgreSQL",
-    "Led $250K automation integration project with advanced HMI systems and real-time performance monitoring"
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "proficiency": "Native",
-      "skills": ["Technical Writing", "API Documentation", "Research Communication", "Cross-functional Collaboration"]
-    }
-  ],
-  "technicalSkills": {
-    "softwareProficiency": [
-      {
-        "category": "AI/ML Frameworks",
-        "applications": ["Python", "FastAPI", "TensorFlow", "PyTorch", "LangChain", "OpenAI API", "Vector Databases"],
-        "proficiencyLevel": "Expert"
-      },
-      {
-        "category": "Full Stack Development",
-        "applications": ["React", "TypeScript", "Next.js", "Node.js", "RESTful APIs", "Microservices"],
-        "proficiencyLevel": "Expert"
-      },
-      {
-        "category": "Database & Data Engineering",
-        "applications": ["PostgreSQL", "MongoDB", "SQL", "Data Pipeline Design", "ETL Processes"],
-        "proficiencyLevel": "Advanced"
-      },
-      {
-        "category": "DevOps & Cloud",
-        "applications": ["Docker", "Azure", "AWS", "Git/CI/CD", "Terraform", "Linux", "PowerShell"],
-        "proficiencyLevel": "Advanced"
-      },
-      {
-        "category": "Robotics & Controls",
-        "applications": ["FANUC Roboguide", "KUKA WorkVisual", "Allen Bradley RSLogix", "Siemens TIA Portal", "Beckhoff TwinCAT"],
-        "proficiencyLevel": "Expert"
-      },
-      {
-        "category": "Industrial Software",
-        "applications": ["Ignition SCADA", "MATLAB", "SolidWorks", "Vision Systems", "HMI Development"],
-        "proficiencyLevel": "Advanced"
-      }
-    ],
-    "administrativeSkills": [
-      "AI/ML Project Management",
-      "Technical Architecture Design",
-      "Cross-functional Team Leadership",
-      "Risk Assessment & Safety Systems",
-      "Performance Analytics & Optimization",
-      "Technical Documentation & Training",
-      "Agile Development Methodologies"
-    ]
-  },
-  "personalQualities": [
-    {
-      "quality": "AI/ML Innovation",
-      "description": "Proven ability to integrate cutting-edge AI/ML technologies into industrial applications, from computer vision systems to predictive analytics"
-    },
-    {
-      "quality": "Full Stack Architecture",
-      "description": "Expert in designing end-to-end solutions from database architecture to frontend interfaces using modern frameworks and cloud technologies"
-    },
-    {
-      "quality": "Problem-Solving Methodology", 
-      "description": "Systematic approach to complex technical challenges using data-driven analysis, machine learning algorithms, and automated optimization"
-    },
-    {
-      "quality": "Cross-Domain Expertise",
-      "description": "Unique combination of industrial robotics, automation controls, and modern AI/ML development enabling innovative integrated solutions"
-    },
-    {
-      "quality": "Continuous Learning & Research",
-      "description": "Actively engaged in AI research community, staying current with latest developments in LLMs, automation frameworks, and industrial applications"
-    },
-    {
-      "quality": "Technical Leadership",
-      "description": "Experience leading complex technical projects and mentoring teams in both traditional automation and emerging AI/ML technologies"
-    }
-  ]
+    "graduationYear": "2014"
+  }
 }

@@ -83,6 +83,20 @@ next-env.d.ts
 # Deployment
 .vercel
 
+# Tooling / agent artifacts (local-only)
+.claude/
+.playwright-mcp/
+openspec/
+.github/prompts/
+.github/skills/
+
+# Ad-hoc screenshots at repo root
+/*.png
+
+# Project standardizes on pnpm — ignore stray npm/yarn lockfiles
+/package-lock.json
+/yarn.lock
+
 # Storybook build outputs
 .out
 .storybook-out

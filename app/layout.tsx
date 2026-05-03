@@ -43,7 +43,29 @@ export default function RootLayout({
       data-contrast="balanced"
       className={`${figtree.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} ${GeistMono.variable}`}
     >
-      <body className={figtree.className}>{children}</body>
+      <body className={figtree.className}>
+        <div id="ak-splash" aria-hidden="true">
+          <div className="ak-splash-inner">
+            <span className="ak-splash-dot" />
+            <span className="ak-splash-name">
+              <em>Andrew</em> King
+            </span>
+            <span className="ak-splash-sep" aria-hidden="true">
+              ·
+            </span>
+            <span className="ak-splash-kicker">Loading</span>
+          </div>
+          <div className="ak-splash-bar" aria-hidden="true">
+            <span />
+          </div>
+        </div>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var MIN=2000,t0=Date.now();function h(){var e=document.getElementById('ak-splash');if(!e)return;var d=Math.max(0,MIN-(Date.now()-t0));setTimeout(function(){e.classList.add('is-ready');setTimeout(function(){if(e&&e.parentNode)e.parentNode.removeChild(e)},600)},d)}if(document.readyState==='complete')h();else window.addEventListener('load',h)})();`,
+          }}
+        />
+        {children}
+      </body>
     </html>
   )
 }
