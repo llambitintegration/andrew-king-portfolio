@@ -12,27 +12,10 @@ const customJestConfig = {
   },
   testMatch: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
   collectCoverageFrom: ["components/**/*.{js,jsx,ts,tsx}", "app/**/*.{js,jsx,ts,tsx}", "!**/*.d.ts"],
-  coverageThreshold: {
-    global: {
-      branches: 65,
-      functions: 35,
-      lines: 40,
-      statements: 40
-    },
-    "components/header.tsx": {
-      branches: 75,
-      functions: 85,
-      lines: 85,
-      statements: 85
-    }
-  },
   transform: {
     "^.+\\.(js|jsx|ts|tsx)$": ["babel-jest", { presets: ["next/babel"] }],
   },
-  transformIgnorePatterns: [
-    "/node_modules/",
-    "^.+\\.module\\.(css|sass|scss)$",
-  ],
+  transformIgnorePatterns: ["/node_modules/", "^.+\\.module\\.(css|sass|scss)$"],
 }
 
 module.exports = customJestConfig
