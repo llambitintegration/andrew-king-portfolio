@@ -228,7 +228,7 @@
       "duration": "2024 - Present",
       "responsibilities": [
         "ASMBLY Makerspace (Austin, TX) — leading the rebuild of the shop's 5-axis fiber-laser gantry CNC: integrating a 2.2 kW Raycus fiber-laser source, overhauling motion control across all five axes, and designing the safety enclosure and interlock system (light curtains, door interlocks, beam-block reset logic, Class-1-by-enclosure architecture) for member access",
-        "The Multiverse School (gen-AI / agentic-software education program) — advisory SME on open-source robotics and the security-vulnerability landscape of edge / controls networks at the IT/OT intersection; volunteer researcher contributing course material and applied-research workstreams across prompt engineering, AI alignment, and agentic workflows"
+        "The Multiverse School (gen-AI / agentic-software education program) — advisory SME on open-source robotics and the security-vulnerability landscape of edge / controls networks at the IT/OT intersection"
       ],
       "relevantSkills": [
         "ASMBLY Makerspace",
@@ -239,11 +239,8 @@
         "Light Curtains",
         "Interlocks",
         "The Multiverse School",
-        "Generative AI",
-        "Prompt Engineering",
-        "AI Alignment",
-        "Agentic Workflows",
-        "Open-source Education"
+        "Open-source Robotics",
+        "IT/OT Security Advisory"
       ],
       "videos": [
         {
